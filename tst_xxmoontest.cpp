@@ -35,6 +35,8 @@ private slots:
     void test15();
     void test16();
     void test17();
+    void test18();
+    void test19();
 };
 
 xxmoonTest::xxmoonTest() {}
@@ -354,9 +356,27 @@ void xxmoonTest::test17() {
     QCOMPARE(qmls[0], expe0);
     expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
     QCOMPARE(qmls[1], expe1);
-    // for(QString qml:qmls) {
-    //     qDebug() << qml;
-    // }
+
+    s = "xxx\n```java\nhello world!\n```\na";
+    qmls = doc_parser->parseQML(s, 600);
+    // Q_ASSERT(qmls.size() == 2);
+    for(QString& qml:qmls) {
+        qDebug() << qml;
+    }
+}
+
+void xxmoonTest::test18() {
+    QString k = "#hello!(x)$";
+    filterSearchKey(k);
+    QCOMPARE(k, "#hellox");
+    // qDebug() << k;
+}
+
+void xxmoonTest::test19() {
+    QString s = "xxx\n```java\nxxxo world!\n```\naaa";
+    QString k = "xx a";
+    s = extractXMSimpleCont(s, k);
+    QCOMPARE(s, "@#red xx@x\n```java\nxxxo world!\n```\n@#red a@aa");
 }
 
 QTEST_APPLESS_MAIN(xxmoonTest)

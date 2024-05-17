@@ -346,6 +346,14 @@ void xxmoonTest::test17() {
     QCOMPARE(qmls[0], expe0);
     expe1 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><br><h1>b</h1>\";width:parent?parent.width:0}";
     QCOMPARE(qmls[1], expe1);
+
+    s = "!(2023/20231010090004.712.430.196.png)\n```\na\n```";
+    qmls = doc_parser->parseQML(s, 600);
+    Q_ASSERT(qmls.size() == 2);
+    expe0 = "Img{src:\"file:///Users/sen/xxmoon/xxmoon/imgs/2023/20231010090004.712.430.196.png\";width:Math.min(parent?parent.width:0, 430);height:196}";
+    QCOMPARE(qmls[0], expe0);
+    expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    QCOMPARE(qmls[1], expe1);
     // for(QString qml:qmls) {
     //     qDebug() << qml;
     // }

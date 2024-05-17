@@ -338,6 +338,14 @@ void xxmoonTest::test17() {
     Q_ASSERT(qmls.size() == 1);
     expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><p style='color:gray;text-align: right;font-style: italic;'>a</p>b\";width:parent?parent.width:0}";
     QCOMPARE(qmls[0], expe0);
+
+    s = "```\na\n```\n\n# b";
+    qmls = doc_parser->parseQML(s, 600);
+    Q_ASSERT(qmls.size() == 2);
+    expe0 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    QCOMPARE(qmls[0], expe0);
+    expe1 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><br><h1>b</h1>\";width:parent?parent.width:0}";
+    QCOMPARE(qmls[1], expe1);
     // for(QString qml:qmls) {
     //     qDebug() << qml;
     // }

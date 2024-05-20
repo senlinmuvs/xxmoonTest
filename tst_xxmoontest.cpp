@@ -39,7 +39,8 @@ private slots:
     void test19();
 };
 
-xxmoonTest::xxmoonTest() {}
+xxmoonTest::xxmoonTest(){
+}
 
 xxmoonTest::~xxmoonTest() {}
 
@@ -366,6 +367,12 @@ void xxmoonTest::test17() {
     QCOMPARE(qmls[0], expe0);
     QCOMPARE(qmls[1], expe1);
     QCOMPARE(qmls[2], expe2);
+
+    s = "file://1.mp4";
+    qmls = doc_parser->parseQML(s, 600);
+    Q_ASSERT(qmls.size() == 1);
+    expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><div><a href='file://1.mp4'>file://1.mp4</a></div>\";width:parent?parent.width:0}";
+    QCOMPARE(qmls[0], expe0);
     // for(QString& qml:qmls) {
     //     qDebug() << qml;
     // }

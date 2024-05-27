@@ -5,6 +5,7 @@
 #include <QClipboard>
 #include <QTimer>
 #include <com/http.h>
+#include <com/script.h>
 #include "com/util.h"
 #include "com/global.h"
 #include "com/docparser.h"
@@ -37,6 +38,9 @@ private slots:
     void test17();
     void test18();
     void test19();
+    void test20();
+    void test21();
+    void test22();
 };
 
 xxmoonTest::xxmoonTest(){
@@ -373,6 +377,22 @@ void xxmoonTest::test17() {
     Q_ASSERT(qmls.size() == 1);
     expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><div><a href='file://1.mp4'>file://1.mp4</a></div>\";width:parent?parent.width:0}";
     QCOMPARE(qmls[0], expe0);
+
+    s = "a\n----\nb";
+    qmls = doc_parser->parseQML(s, 600);
+    Q_ASSERT(qmls.size() == 1);
+    expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a<hr>b\";width:parent?parent.width:0}";
+    QCOMPARE(qmls[0], expe0);
+
+    s = "# a\n----\n";
+    qmls = doc_parser->parseQML(s, 600);
+    expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><h1>a</h1><hr>\";width:parent?parent.width:0}";
+    QCOMPARE(qmls[0], expe0);
+
+    s = "----\nx";
+    qmls = doc_parser->parseQML(s, 600);
+    expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><hr>x\";width:parent?parent.width:0}";
+    QCOMPARE(qmls[0], expe0);
     // for(QString& qml:qmls) {
     //     qDebug() << qml;
     // }
@@ -390,6 +410,82 @@ void xxmoonTest::test19() {
     QString k = "xx a";
     s = extractXMSimpleCont(s, k);
     QCOMPARE(s, "@#red xx@x\n```java\nxxxo world!\n```\n@#red a@aa");
+}
+
+void xxmoonTest::test20() {
+    // a->initCfg();
+    // Script::INS().exeCmd(1, "check_douyin_live.py", "");
+    QProcess process;
+    process.start("/usr/local/bin/python3", QStringList() << "/Volumes/MD/xxmoon/xxmoon/scripts/check_douyin_live.py");
+    if(process.waitForStarted()) {
+        if(process.waitForFinished()) {
+            QString out = process.readAll();
+            qDebug() << out;
+        } else {
+            qDebug() << process.errorString();
+        }
+    } else {
+        qDebug() << process.errorString();
+    }
+}
+
+void xxmoonTest::test21() {
+    a->initCfg();
+    // QMap<QString, qint64> m;
+    // m["a"] = 10;
+    // m["/Volumes/MD/xxmoon/xxmoon/attaches/important.txt"] = 11;
+    // qDebug() << m.value("a");
+    // qDebug() << m["a"];
+    // qDebug() << m.value("/Volumes/MD/xxmoon/xxmoon/attaches/important.txt");
+    qint64 t1 = ut::time::getCurMills();
+    QList<QStringList> arr = sy->getUploadFiles();
+    QStringList list = arr[0];
+    qint64 t2 = ut::time::getCurMills();
+    qDebug() << t2 - t1;
+    //[check_live.py:10000]
+    QString f1 = cfg->scriptDir+"/check_live.py";
+    QString f2 = cfg->scriptDir+"/_check_live.py";
+    qint64 f1Time = sy->valueOfFileMod(f1);
+    Q_ASSERT(f1Time > 0);
+
+    ut::file::rename(f1, f2);
+    arr = sy->getUploadFiles();
+    list = arr[0];
+    //[_check_live.py:10000]
+    Q_ASSERT(list.size() == 1);
+    QCOMPARE(list.at(0), f2);
+    f1Time = sy->valueOfFileMod(f1);
+    qint64 f2Time = sy->valueOfFileMod(f2);
+    Q_ASSERT(f1Time == 0);
+    Q_ASSERT(f2Time > 0);
+
+    ut::file::rename(f2, f1);
+    arr = sy->getUploadFiles();
+    list = arr[0];
+    Q_ASSERT(list.size() == 1);
+    QCOMPARE(list.at(0), f1);
+    f1Time = sy->valueOfFileMod(f1);
+    f2Time = sy->valueOfFileMod(f2);
+    Q_ASSERT(f1Time > 0);
+    Q_ASSERT(f2Time == 0);
+}
+
+void xxmoonTest::test22() {
+    QString cont = "<每隔1分,1,x.py>";
+    Script::INS().insertStatusText(cont, 1);
+    qDebug() << cont;
+
+    Script::INS().insertStatusText(cont, 0);
+    qDebug() << cont;
+
+    Script::INS().insertStatusText(cont, -1);
+    qDebug() << cont;
+
+    // int i = cont.lastIndexOf("\n----\n");
+    // if(i >= 0) {
+    //     cont = cont.mid(0, i);
+    // }
+    // qDebug() << cont;
 }
 
 QTEST_APPLESS_MAIN(xxmoonTest)

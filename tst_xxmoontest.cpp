@@ -393,6 +393,15 @@ void xxmoonTest::test17() {
     qmls = doc_parser->parseQML(s, 600);
     expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><hr>x\";width:parent?parent.width:0}";
     QCOMPARE(qmls[0], expe0);
+
+    s = "```\na\n```\n```\nb\n```";
+    qmls = doc_parser->parseQML(s, 600);
+    Q_ASSERT(qmls.size() == 2);
+    expe0 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>b\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    QCOMPARE(qmls[0], expe0);
+    QCOMPARE(qmls[1], expe1);
+
     // for(QString& qml:qmls) {
     //     qDebug() << qml;
     // }
@@ -472,13 +481,24 @@ void xxmoonTest::test21() {
 
 void xxmoonTest::test22() {
     QString cont = "<每隔1分,1,x.py>";
-    Script::INS().insertStatusText(cont, 1);
+    QString r = "成功";
+    Script::INS().updateStatusText(cont, r);
     qDebug() << cont;
 
-    Script::INS().insertStatusText(cont, 0);
+    r = "成功";
+    Script::INS().updateStatusText(cont, r);
     qDebug() << cont;
 
-    Script::INS().insertStatusText(cont, -1);
+    r = "成功";
+    Script::INS().updateStatusText(cont, r);
+    qDebug() << cont;
+
+    r = "yyy";
+    Script::INS().updateStatusText(cont, r);
+    qDebug() << cont;
+
+    r = "yyy";
+    Script::INS().updateStatusText(cont, r);
     qDebug() << cont;
 
     // int i = cont.lastIndexOf("\n----\n");

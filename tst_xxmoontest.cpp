@@ -41,6 +41,10 @@ private slots:
     void test20();
     void test21();
     void test22();
+    void test23();
+    void test24();
+    void test25();
+    void testRegular();
 };
 
 xxmoonTest::xxmoonTest(){
@@ -351,7 +355,7 @@ void xxmoonTest::test17() {
     Q_ASSERT(qmls.size() == 2);
     expe0 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
     QCOMPARE(qmls[0], expe0);
-    expe1 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><br><h1>b</h1>\";width:parent?parent.width:0}";
+    expe1 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><p style='line-height:20px'>&nbsp;</p><h1>b</h1>\";width:parent?parent.width:0}";
     QCOMPARE(qmls[1], expe1);
 
     s = "!(2023/20231010090004.712.430.196.png)\n```\na\n```";
@@ -378,6 +382,23 @@ void xxmoonTest::test17() {
     expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><div><a href='file://1.mp4'>file://1.mp4</a></div>\";width:parent?parent.width:0}";
     QCOMPARE(qmls[0], expe0);
 
+    s = "```\na\n```\n```\nb\n```";
+    qmls = doc_parser->parseQML(s, 600);
+    Q_ASSERT(qmls.size() == 2);
+    expe0 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>b\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    QCOMPARE(qmls[0], expe0);
+    QCOMPARE(qmls[1], expe1);
+
+    s = "```\na\n```\n\n# b\n\n# c\n\nd\n\ne";
+    qmls = doc_parser->parseQML(s, 600);
+    Q_ASSERT(qmls.size() == 2);
+    expe0 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    expe1 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><p style='line-height:20px'>&nbsp;</p><h1>b</h1><p style='line-height:20px'>&nbsp;</p><h1>c</h1><br>d<br><br>e\";width:parent?parent.width:0}";
+    QCOMPARE(qmls[0], expe0);
+    QCOMPARE(qmls[1], expe1);
+
+    //横线 ------------- start
     s = "a\n----\nb";
     qmls = doc_parser->parseQML(s, 600);
     Q_ASSERT(qmls.size() == 1);
@@ -394,13 +415,56 @@ void xxmoonTest::test17() {
     expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><hr>x\";width:parent?parent.width:0}";
     QCOMPARE(qmls[0], expe0);
 
-    s = "```\na\n```\n```\nb\n```";
+    s = "# a\n\n----\n";
     qmls = doc_parser->parseQML(s, 600);
-    Q_ASSERT(qmls.size() == 2);
+    Q_ASSERT(qmls.size() == 1);
+    expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><h1>a</h1><p style='line-height:20px'>&nbsp;</p><hr>\";width:parent?parent.width:0}";
+    QCOMPARE(qmls[0], expe0);
+
+    s = "a\n----\nb\n----";
+    qmls = doc_parser->parseQML(s, 600);
+    expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a<hr>b<hr>\";width:parent?parent.width:0}";
+    Q_ASSERT(qmls.size() == 1);
+    QCOMPARE(qmls[0], expe0);
+
+    s = "-----------------\n";
+    qmls = doc_parser->parseQML(s, 600);
+    expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>-----------------<br>\";width:parent?parent.width:0}";
+    Q_ASSERT(qmls.size() == 1);
+    QCOMPARE(qmls[0], expe0);
+
+    s = "----\n";
+    qmls = doc_parser->parseQML(s, 600);
+    expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><hr>\";width:parent?parent.width:0}";
+    Q_ASSERT(qmls.size() == 1);
+    QCOMPARE(qmls[0], expe0);
+    //横线 ------------- end
+
+    // s = "aaaaaaaaaaaaaaa\n!(2021/20210828162625.433.500.333.png)\nbbbbbbbbbbbbbbb";
+    // qmls = doc_parser->parseQML(s, 600);
+
+    // s = "!(2024/20240604082742.397.864.1795.png)";
+    // qmls = doc_parser->parseQML(s, 600);
+
+    s = "```\na\n```\n\n```\nb\n```";
+    qmls = doc_parser->parseQML(s, 600);
+    QCOMPARE(qmls.size(), 3);
     expe0 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
-    expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>b\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    expe1 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><p style='line-height:20px'>&nbsp;</p>\";width:parent?parent.width:0}";
+    expe2 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>b\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
     QCOMPARE(qmls[0], expe0);
     QCOMPARE(qmls[1], expe1);
+    QCOMPARE(qmls[2], expe2);
+
+    s = "a\n!(2021/20210828162625.433.500.333.png)\n\nb";
+    qmls = doc_parser->parseQML(s, 600);
+    QCOMPARE(qmls.size(), 3);
+    expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0}";
+    expe1 = "Img{src:\"file:///Users/sen/xxmoon/xxmoon/imgs/2021/20210828162625.433.500.333.png\";width:Math.min(parent?parent.width:0, 500);height:333}";
+    expe2 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><p style='line-height:20px'>&nbsp;</p>b\";width:parent?parent.width:0}";
+    QCOMPARE(qmls[0], expe0);
+    QCOMPARE(qmls[1], expe1);
+    QCOMPARE(qmls[2], expe2);
 
     // for(QString& qml:qmls) {
     //     qDebug() << qml;
@@ -414,30 +478,45 @@ void xxmoonTest::test18() {
     // qDebug() << k;
 }
 
+//搜索关键词高亮
 void xxmoonTest::test19() {
     QString s = "xxx\n```java\nxxxo world!\n```\naaa";
     QString k = "xx a";
     s = extractXMSimpleCont(s, k);
     QCOMPARE(s, "@#red xx@x\n```java\nxxxo world!\n```\n@#red a@aa");
+
+    s = "mac命令定时";
+    k = "mac 定时";
+    s = extractXMSimpleCont(s, k);
+    QCOMPARE(s, "@#red mac@命令@#red 定时@");
 }
 
+//调用python
 void xxmoonTest::test20() {
     // a->initCfg();
     // Script::INS().exeCmd(1, "check_douyin_live.py", "");
     QProcess process;
-    process.start("/usr/local/bin/python3", QStringList() << "/Volumes/MD/xxmoon/xxmoon/scripts/check_douyin_live.py");
+    // process.start("/usr/local/bin/python3", QStringList() << "/Volumes/MD/xxmoon/xxmoon/scripts/check_douyin_live.py");
+    // QString script = "/Volumes/MD/xxmoon/xxmoon/scripts/img_size.py";
+    // QString p1 = "/Volumes/MD/xxmoon/xxmoon/imgs/2024/20240604082742.397.864.1795.png";
+    // QString p2 = "0.5";
+    QString script = "/Volumes/MD/xxmoon/xxmoon/scripts/gen_baidupan_url.py";
+    QString p1 = "senlinmuvs";
+    QString p2 = "200";
+    process.start("/usr/local/bin/python3", QStringList() << script << p1 << p2);
     if(process.waitForStarted()) {
         if(process.waitForFinished()) {
             QString out = process.readAll();
             qDebug() << out;
         } else {
-            qDebug() << process.errorString();
+            qDebug() << "err1" << process.errorString();
         }
     } else {
-        qDebug() << process.errorString();
+        qDebug() << "err2" << process.errorString();
     }
 }
 
+//定时器文件同步
 void xxmoonTest::test21() {
     a->initCfg();
     // QMap<QString, qint64> m;
@@ -501,11 +580,61 @@ void xxmoonTest::test22() {
     Script::INS().updateStatusText(cont, r);
     qDebug() << cont;
 
+    r = "yyy";
+    Script::INS().updateStatusText(cont, r);
+    qDebug() << cont;
+
+    r = "yyy";
+    Script::INS().updateStatusText(cont, r);
+    qDebug() << cont;
+
     // int i = cont.lastIndexOf("\n----\n");
     // if(i >= 0) {
     //     cont = cont.mid(0, i);
     // }
     // qDebug() << cont;
+}
+
+void xxmoonTest::test23() {
+    lg->init(cfg->logFile);
+    cfg->logLevel = "info";
+    // lg->info("hello", "world", "xxx", "alksdjf");
+}
+
+void xxmoonTest::test24() {
+    QString s = "a\n----\nb\n----\n";
+            // s = "a\n----\nb\n----";
+    qDebug() << s;
+    // s = ut::str::replaceAllTag(s, "----","\n", "<hr>", "");
+    s = s.replace("----\n", "<hr>");
+    qDebug() << s;
+}
+
+//判断是否是中文
+void xxmoonTest::test25() {
+    // QChar::UnicodeVersion v = QChar::currentUnicodeVersion();
+    // qDebug() << v << QChar::UnicodeVersion::Unicode_15_0;
+    QString s = "哈abc*&^喽鿿";
+    for(int i = 0; i < s.length(); i++) {
+        // if(ut::str::isChinese(s[i])) {
+            qDebug() << s[i];
+        // }
+    }
+}
+
+void xxmoonTest::testRegular() {
+    static QRegularExpression re("\n[#]{1,3}[ ].+\n.+", QRegularExpression::DotMatchesEverythingOption);
+    QString s = "\n# xxx\nasldfjsldf";
+    QRegularExpressionMatch match = re.match(s);
+    Q_ASSERT(match.hasMatch() == true);
+
+    s = "\n## xxx\n\nasld\nfjsldf";
+    match = re.match(s);
+    Q_ASSERT(match.hasMatch() == true);
+
+    s = "\n### \nsdf\nasld\nfjsldf";
+    match = re.match(s);
+    Q_ASSERT(match.hasMatch() == true);
 }
 
 QTEST_APPLESS_MAIN(xxmoonTest)

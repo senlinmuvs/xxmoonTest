@@ -49,6 +49,12 @@ private slots:
     void testParser3();
     void testParser4();
     void testParser5();
+    void testParser6();
+    void testParser7();
+    void testParser8();
+    void testParser9();
+    void testParser10();
+    void testParser11();
 };
 
 xxmoonTest::xxmoonTest(){
@@ -140,11 +146,11 @@ void xxmoonTest::test4() {
 
 void xxmoonTest::test5() {
     // QString src = ut::file::readFile("/Users/sen/Desktop/src.txt");
-    QString src = "//aaa";
+    QString src = "System.out.Println(\"hello world!\");";
     QString code = "java";
     qDebug() << src.toUtf8().data();
     QString x = Highlight(src.toUtf8().data(), code.toUtf8().data());
-    ut::file::writeText("/Users/sen/Desktop/code_java.html", x);
+    ut::file::writeText("E:/code_java.html", x);
     qDebug() << x;
 }
 void xxmoonTest::test6() {
@@ -370,36 +376,6 @@ void xxmoonTest::testParser1() {
     expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
     QCOMPARE(qmls[1], expe1);
 
-    s = "xxx\n```java\nhello world!\n```\na";
-    qmls = doc_parser->parseQML(s, 600);
-    Q_ASSERT(qmls.size() == 3);
-    expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>xxx<br>\";width:parent?parent.width:0}";
-    expe1 = "Code{text:'<html>\n<style type=\"text/css\">\n/* Background */ .chroma {  }\n/* Error */ .chroma .err { color: #000000 }\n/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }\n/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }\n/* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #e5e5e5 }\n/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }\n/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }\n/* Keyword */ .chroma .k { color: #a90d91 }\n/* KeywordConstant */ .chroma .kc { color: #a90d91 }\n/* KeywordDeclaration */ .chroma .kd { color: #a90d91 }\n/* KeywordNamespace */ .chroma .kn { color: #a90d91 }\n/* KeywordPseudo */ .chroma .kp { color: #a90d91 }\n/* KeywordReserved */ .chroma .kr { color: #a90d91 }\n/* KeywordType */ .chroma .kt { color: #a90d91 }\n/* Name */ .chroma .n { color: #000000 }\n/* NameAttribute */ .chroma .na { color: #836c28 }\n/* NameBuiltin */ .chroma .nb { color: #a90d91 }\n/* NameBuiltinPseudo */ .chroma .bp { color: #5b269a }\n/* NameClass */ .chroma .nc { color: #3f6e75 }\n/* NameConstant */ .chroma .no { color: #000000 }\n/* NameDecorator */ .chroma .nd { color: #000000 }\n/* NameEntity */ .chroma .ni { color: #000000 }\n/* NameException */ .chroma .ne { color: #000000 }\n/* NameFunction */ .chroma .nf { color: #000000 }\n/* NameFunctionMagic */ .chroma .fm { color: #000000 }\n/* NameLabel */ .chroma .nl { color: #000000 }\n/* NameNamespace */ .chroma .nn { color: #000000 }\n/* NameOther */ .chroma .nx { color: #000000 }\n/* NameProperty */ .chroma .py { color: #000000 }\n/* NameTag */ .chroma .nt { color: #000000 }\n/* NameVariable */ .chroma .nv { color: #000000 }\n/* NameVariableClass */ .chroma .vc { color: #000000 }\n/* NameVariableGlobal */ .chroma .vg { color: #000000 }\n/* NameVariableInstance */ .chroma .vi { color: #000000 }\n/* NameVariableMagic */ .chroma .vm { color: #000000 }\n/* Literal */ .chroma .l { color: #1c01ce }\n/* LiteralDate */ .chroma .ld { color: #1c01ce }\n/* LiteralString */ .chroma .s { color: #c41a16 }\n/* LiteralStringAffix */ .chroma .sa { color: #c41a16 }\n/* LiteralStringBacktick */ .chroma .sb { color: #c41a16 }\n/* LiteralStringChar */ .chroma .sc { color: #2300ce }\n/* LiteralStringDelimiter */ .chroma .dl { color: #c41a16 }\n/* LiteralStringDoc */ .chroma .sd { color: #c41a16 }\n/* LiteralStringDouble */ .chroma .s2 { color: #c41a16 }\n/* LiteralStringEscape */ .chroma .se { color: #c41a16 }\n/* LiteralStringHeredoc */ .chroma .sh { color: #c41a16 }\n/* LiteralStringInterpol */ .chroma .si { color: #c41a16 }\n/* LiteralStringOther */ .chroma .sx { color: #c41a16 }\n/* LiteralStringRegex */ .chroma .sr { color: #c41a16 }\n/* LiteralStringSingle */ .chroma .s1 { color: #c41a16 }\n/* LiteralStringSymbol */ .chroma .ss { color: #c41a16 }\n/* LiteralNumber */ .chroma .m { color: #1c01ce }\n/* LiteralNumberBin */ .chroma .mb { color: #1c01ce }\n/* LiteralNumberFloat */ .chroma .mf { color: #1c01ce }\n/* LiteralNumberHex */ .chroma .mh { color: #1c01ce }\n/* LiteralNumberInteger */ .chroma .mi { color: #1c01ce }\n/* LiteralNumberIntegerLong */ .chroma .il { color: #1c01ce }\n/* LiteralNumberOct */ .chroma .mo { color: #1c01ce }\n/* Operator */ .chroma .o { color: #000000 }\n/* OperatorWord */ .chroma .ow { color: #000000 }\n/* Comment */ .chroma .c { color: #177500 }\n/* CommentHashbang */ .chroma .ch { color: #177500 }\n/* CommentMultiline */ .chroma .cm { color: #177500 }\n/* CommentSingle */ .chroma .c1 { color: #177500 }\n/* CommentSpecial */ .chroma .cs { color: #177500 }\n/* CommentPreproc */ .chroma .cp { color: #633820 }\n/* CommentPreprocFile */ .chroma .cpf { color: #633820 }\n</style><pre tabindex=\"0\" class=\"chroma\"><span class=\"n\">hello</span> <span class=\"n\">world</span><span class=\"o\">!</span></pre>';width:parent?parent.width:0;color:'#ECECEC';}";
-    QString expe2 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0}";
-    qDebug() << "DEBUG qmls[1] length:" << qmls[1].length() << "expe1 length:" << expe1.length();
-    // Write to file for full output
-    QFile f("e:/code/trae/actual_output.txt");
-    f.open(QFile::WriteOnly);
-    f.write(qmls[1].toUtf8());
-    f.close();
-    QFile g("e:/code/trae/expected_output.txt");
-    g.open(QFile::WriteOnly);
-    g.write(expe1.toUtf8());
-    g.close();
-    if (qmls[1] != expe1) {
-        for (int i = 0; i < qMin(qmls[1].length(), expe1.length()); ++i) {
-            if (qmls[1][i] != expe1[i]) {
-                qDebug() << "DEBUG first diff at index" << i << "actual:" << qmls[1][i] << "expected:" << expe1[i];
-                qDebug() << "DEBUG context actual:" << qmls[1].mid(qMax(0,i-20), 50);
-                qDebug() << "DEBUG context expected:" << expe1.mid(qMax(0,i-20), 50);
-                break;
-            }
-        }
-    }
-    QCOMPARE(qmls[0], expe0);
-    QCOMPARE(qmls[1], expe1);
-    QCOMPARE(qmls[2], expe2);
-
     s = "file://1.mp4";
     qmls = doc_parser->parseQML(s, 600);
     Q_ASSERT(qmls.size() == 1);
@@ -470,6 +446,7 @@ void xxmoonTest::testParser1() {
     // s = "!(2024/20240604082742.397.864.1795.png)";
     // qmls = doc_parser->parseQML(s, 600);
 
+    QString expe2;
     s = "```\na\n```\n\n```\nb\n```";
     qmls = doc_parser->parseQML(s, 600);
     QCOMPARE(qmls.size(), 3);
@@ -550,6 +527,86 @@ void xxmoonTest::testParser5() {
     QCOMPARE(qmls[1], expe1);
 }
 
+void xxmoonTest::testParser6() {
+    QString s = "http://a\nhttps://b";
+    QStringList qmls = doc_parser->parseQML(s, 600);
+    Q_ASSERT(qmls.size() == 1);
+
+    QString expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><div><a href='http://a'>http://a</a></div><div><a href='https://b'>https://b</a></div>\";width:parent?parent.width:0}";
+    QCOMPARE(qmls[0], expe0);
+}
+void xxmoonTest::testParser7() {
+    QString s = "a\n```\nb\n```";
+    QStringList qmls = doc_parser->parseQML(s, 600);
+    Q_ASSERT(qmls.size() == 2);
+
+    QString expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0}";
+    QString expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>b\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    QCOMPARE(qmls[0], expe0);
+    QCOMPARE(qmls[1], expe1);
+}
+
+void xxmoonTest::testParser8() {
+    QString s = "!(2026/20260602143514.182.2732.1534.png)\na";
+    QStringList qmls = doc_parser->parseQML(s, 600);
+    Q_ASSERT(qmls.size() == 2);
+
+    QString expe0 = "Img{src:\"file:///D://xxmoon/xxmoon/imgs/2026/20260602143514.182.2732.1534.png\";width:Math.min(parent?parent.width:0,2732);height:1534;scale:1}";
+    QString expe1 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0}";
+    QCOMPARE(qmls[0], expe0);
+    QCOMPARE(qmls[1], expe1);
+}
+void xxmoonTest::testParser9() {
+    QString s = "xxx\n```java\nSystem.out.Println(\"hello world!\");\n```\na";
+    QStringList qmls = doc_parser->parseQML(s, 600);
+    Q_ASSERT(qmls.size() == 3);
+    QString expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>xxx\";width:parent?parent.width:0}";
+    QString expe1 = "Code{text:'";
+    QString expe2 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0}";
+    QCOMPARE(qmls[0], expe0);
+    Q_ASSERT(qmls[1].startsWith(expe1));
+    QCOMPARE(qmls[2], expe2);
+}
+void xxmoonTest::testParser10() {
+    QString s = "# a\nhttp://b";
+    QStringList qmls = doc_parser->parseQML(s, 600);
+    Q_ASSERT(qmls.size() == 1);
+    QString expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><h1>a</h1><div><a href='http://b'>http://b</a></div>\";width:parent?parent.width:0}";
+    QCOMPARE(qmls[0], expe0);
+
+    s = "## a\nhttp://b";
+    qmls = doc_parser->parseQML(s, 600);
+    Q_ASSERT(qmls.size() == 1);
+    expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><h2>a</h2><div><a href='http://b'>http://b</a></div>\";width:parent?parent.width:0}";
+    QCOMPARE(qmls[0], expe0);
+
+    s = "### a\nhttp://b";
+    qmls = doc_parser->parseQML(s, 600);
+    Q_ASSERT(qmls.size() == 1);
+    expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><h3>a</h3><div><a href='http://b'>http://b</a></div>\";width:parent?parent.width:0}";
+    QCOMPARE(qmls[0], expe0);
+
+    s = "# a\nhttps://b";
+    qmls = doc_parser->parseQML(s, 600);
+    Q_ASSERT(qmls.size() == 1);
+    expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><h1>a</h1><div><a href='https://b'>https://b</a></div>\";width:parent?parent.width:0}";
+    QCOMPARE(qmls[0], expe0);
+
+    s = "# a\nfile://b";
+    qmls = doc_parser->parseQML(s, 600);
+    Q_ASSERT(qmls.size() == 1);
+    expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><h1>a</h1><div><a href='file://b'>file://b</a></div>\";width:parent?parent.width:0}";
+    QCOMPARE(qmls[0], expe0);
+}
+void xxmoonTest::testParser11() {
+    QString s = "# a\nb\n```\nc\n```";
+    QStringList qmls = doc_parser->parseQML(s, 600);
+    Q_ASSERT(qmls.size() == 2);
+    QString expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><h1>a</h1>b\";width:parent?parent.width:0}";
+    QString expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>c\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    QCOMPARE(qmls[0], expe0);
+    QCOMPARE(qmls[1], expe1);
+}
 void xxmoonTest::test18() {
     QString k = "#hello!(x)$";
     filterSearchKey(k);

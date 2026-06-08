@@ -1,0 +1,2461 @@
+﻿C:/Qt/Tools/mingw1310_64/bin/mingw32-make -f Makefile.Release
+mingw32-make[1]: Entering directory 'E:/code/trae/xxmoontest'
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\sync.o ..\xxmoon\com\sync.cpp
+mingw32-make : In file included from ../xxmoon/app.h:5,
+所在位置 行:1 字符: 80
++ ... 64\bin;C:\Qt\6.9.0\mingw_64\bin;$env:PATH"; mingw32-make 2>&1 | Out-F ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (In file included from ../xxmoon/a 
+   pp.h:5,:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+                 from ../xxmoon/com/global.h:17,
+                 from ..\xxmoon\com\sync.cpp:3:
+../xxmoon/com/const.h:173:20: warning: 'DOLOG_TaskLog_NEW' defined but not used
+ [-Wunused-variable]
+  173 | const static char* DOLOG_TaskLog_NEW = "nl %1";
+      |                    ^~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:172:20: warning: 'DOLOG_SQL' defined but not used [-Wunus
+ed-variable]
+  172 | const static char* DOLOG_SQL = "sql %1";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:171:20: warning: 'DOLOG_TAG_DEL' defined but not used [-W
+unused-variable]
+  171 | const static char* DOLOG_TAG_DEL = "dt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:170:20: warning: 'DOLOG_TAG_NEW' defined but not used [-W
+unused-variable]
+  170 | const static char* DOLOG_TAG_NEW = "nt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:169:20: warning: 'DOLOG_ENV_DEL' defined but not used [-W
+unused-variable]
+  169 | const static char* DOLOG_ENV_DEL = "de %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:168:20: warning: 'DOLOG_ENV_NEW' defined but not used [-W
+unused-variable]
+  168 | const static char* DOLOG_ENV_NEW = "ne %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:167:20: warning: 'DOLOG_WORK_DEL' defined but not used [-
+Wunused-variable]
+  167 | const static char* DOLOG_WORK_DEL = "dw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:166:20: warning: 'DOLOG_WORK_NEW' defined but not used [-
+Wunused-variable]
+  166 | const static char* DOLOG_WORK_NEW = "nw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:165:20: warning: 'DOLOG_CATEGORY_DEL' defined but not use
+d [-Wunused-variable]
+  165 | const static char* DOLOG_CATEGORY_DEL = "dc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:164:20: warning: 'DOLOG_CATEGORY_NEW' defined but not use
+d [-Wunused-variable]
+  164 | const static char* DOLOG_CATEGORY_NEW = "nc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:163:20: warning: 'DOLOG_NOTE_BY_WID_DEL' defined but not 
+used [-Wunused-variable]
+  163 | const static char* DOLOG_NOTE_BY_WID_DEL = "dnw %1";
+      |                    ^~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:162:20: warning: 'DOLOG_NOTE_DEL' defined but not used [-
+Wunused-variable]
+  162 | const static char* DOLOG_NOTE_DEL = "dn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:161:20: warning: 'DOLOG_NOTE_NEW' defined but not used [-
+Wunused-variable]
+  161 | const static char* DOLOG_NOTE_NEW = "nn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:160:20: warning: 'DOLOG_XM_DEL' defined but not used [-Wu
+nused-variable]
+  160 | const static char* DOLOG_XM_DEL = "dx %1 %2";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:159:20: warning: 'DOLOG_XM_NEW' defined but not used [-Wu
+nused-variable]
+  159 | const static char* DOLOG_XM_NEW = "nx %1";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:136:20: warning: 'FOLDER_RESOURCES' defined but not used 
+[-Wunused-variable]
+  136 | const static char* FOLDER_RESOURCES = "resources";
+      |                    ^~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:135:20: warning: 'SM_FLAG' defined but not used [-Wunused
+-variable]
+  135 | const static char* SM_FLAG = "SHAREMEMORY_XXMOON";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:134:20: warning: 'HTTPS_PRE' defined but not used [-Wunus
+ed-variable]
+  134 | const static char* HTTPS_PRE = "https://";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:133:20: warning: 'HTTP_PRE' defined but not used [-Wunuse
+d-variable]
+  133 | const static char* HTTP_PRE = "http://";
+      |                    ^~~~~~~~
+../xxmoon/com/const.h:132:20: warning: 'CODE36' defined but not used [-Wunused-
+variable]
+  132 | const static char* CODE36 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      |                    ^~~~~~
+../xxmoon/com/const.h:131:20: warning: 'CODE_TABLE' defined but not used [-Wunu
+sed-variable]
+  131 | const static char* CODE_TABLE = "~r9y.2s=79#)aef^_kno%4h|u6?5wlz`({dc;v
+p<q3,0&x/!'7[-+mb@>gt*i}ja$";
+      |                    ^~~~~~~~~~
+../xxmoon/com/const.h:117:20: warning: 'LOG_LEVEL_ERROR' defined but not used [
+-Wunused-variable]
+  117 | const static char* LOG_LEVEL_ERROR = "error";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:116:20: warning: 'LOG_LEVEL_WARN' defined but not used [-
+Wunused-variable]
+  116 | const static char* LOG_LEVEL_WARN = "warn";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:115:20: warning: 'LOG_LEVEL_INFO' defined but not used [-
+Wunused-variable]
+  115 | const static char* LOG_LEVEL_INFO = "info";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:114:20: warning: 'LOG_LEVEL_DEBUG' defined but not used [
+-Wunused-variable]
+  114 | const static char* LOG_LEVEL_DEBUG = "debug";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:113:20: warning: 'LOG_LEVEL_TRACE' defined but not used [
+-Wunused-variable]
+  113 | const static char* LOG_LEVEL_TRACE = "trace";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:111:20: warning: 'NOTE_BJ_STYLE' defined but not used [-W
+unused-variable]
+  111 | const static char* NOTE_BJ_STYLE = " style='color:gray;text-align: righ
+t;font-style: italic; font-size: 14px;'";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:105:20: warning: 'ENV_K_SCRIPTS' defined but not used [-W
+unused-variable]
+  105 | const static char* ENV_K_SCRIPTS = "SCRIPTS";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:99:20: warning: 'ENV_K_LAST_EXCHANGE_VERSION' defined but
+ not used [-Wunused-variable]
+   99 | const static char* ENV_K_LAST_EXCHANGE_VERSION = "LAST_EXCHANGE_VERSION
+";
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:98:20: warning: 'ENV_K_LAST_IMP_TIME' defined but not use
+d [-Wunused-variable]
+   98 | const static char* ENV_K_LAST_IMP_TIME = "LAST_IMP_TIME";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:97:20: warning: 'ENV_K_LAST_IMP_PATH' defined but not use
+d [-Wunused-variable]
+   97 | const static char* ENV_K_LAST_IMP_PATH = "LAST_IMP_PATH";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:95:20: warning: 'VERSION' defined but not used [-Wunused-
+variable]
+   95 | const static char* VERSION = "v1.59.1";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:87:20: warning: 'sql_task_log_table' defined but not used
+ [-Wunused-variable]
+   87 | const static char* sql_task_log_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:81:20: warning: 'sql_env_table' defined but not used [-Wu
+nused-variable]
+   81 | const static char* sql_env_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:75:20: warning: 'sql_tag_table' defined but not used [-Wu
+nused-variable]
+   75 | const static char* sql_tag_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:57:20: warning: 'sql_xm_table' defined but not used [-Wun
+used-variable]
+   57 | const static char* sql_xm_table =
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:48:20: warning: 'sql_category_table' defined but not used
+ [-Wunused-variable]
+   48 | const static char* sql_category_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:46:20: warning: 'sql_note_script' defined but not used [-
+Wunused-variable]
+   46 | const static char* sql_note_script = "create unique index note_time_uin
+dex on note (time);";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:31:20: warning: 'sql_note_table' defined but not used [-W
+unused-variable]
+   31 | const static char* sql_note_table =
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:19:20: warning: 'sql_work_table' defined but not used [-W
+unused-variable]
+   19 | const static char* sql_work_table =
+      |                    ^~~~~~~~~~~~~~
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\util.o ..\xxmoon\com\util.cpp
+..\xxmoon\com\util.cpp: In function 'QString ut::str::mapToStr(QVariantMap)':
+..\xxmoon\com\util.cpp:348:32: warning: 'QVariant::Type QVariant::type() const'
+ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+  348 |                     if(var.type() == QVariant::Type::String) {
+      |                        ~~~~~~~~^~
+In file included from C:/Qt/6.9.0/mingw_64/include/QtCore/qregularexpression.h:
+13,
+                 from C:/Qt/6.9.0/mingw_64/include/QtCore/QRegularExpression:1,
+                 from ..\xxmoon\com\util.cpp:3:
+C:/Qt/6.9.0/mingw_64/include/QtCore/qvariant.h:432:10: note: declared here
+  432 |     Type type() const
+      |          ^~~~
+..\xxmoon\com\util.cpp:348:54: warning: 'Type' is deprecated: Use QMetaType::Ty
+pe instead. [-Wdeprecated-declarations]
+  348 |                     if(var.type() == QVariant::Type::String) {
+      |                                                      ^~~~~~
+C:/Qt/6.9.0/mingw_64/include/QtCore/qvariant.h:142:70: note: declared here
+  142 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") Ty
+pe
+      |                                                                      ^~
+~~
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\xm_format.o ..\xxmoon\com\xm_format.cpp
+..\xxmoon\com\xm_format.cpp: In member function 'XM* XMFormat::openFile(QString
+, QString)':
+..\xxmoon\com\xm_format.cpp:153:10: warning: unused variable 'ok' [-Wunused-var
+iable]
+  153 |     bool ok;
+      |          ^~
+In file included from ../xxmoon/app.h:5,
+                 from ../xxmoon/com/global.h:17,
+                 from ..\xxmoon\com\xm_format.cpp:3:
+../xxmoon/com/const.h: At global scope:
+../xxmoon/com/const.h:173:20: warning: 'DOLOG_TaskLog_NEW' defined but not used
+ [-Wunused-variable]
+  173 | const static char* DOLOG_TaskLog_NEW = "nl %1";
+      |                    ^~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:172:20: warning: 'DOLOG_SQL' defined but not used [-Wunus
+ed-variable]
+  172 | const static char* DOLOG_SQL = "sql %1";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:171:20: warning: 'DOLOG_TAG_DEL' defined but not used [-W
+unused-variable]
+  171 | const static char* DOLOG_TAG_DEL = "dt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:170:20: warning: 'DOLOG_TAG_NEW' defined but not used [-W
+unused-variable]
+  170 | const static char* DOLOG_TAG_NEW = "nt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:169:20: warning: 'DOLOG_ENV_DEL' defined but not used [-W
+unused-variable]
+  169 | const static char* DOLOG_ENV_DEL = "de %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:168:20: warning: 'DOLOG_ENV_NEW' defined but not used [-W
+unused-variable]
+  168 | const static char* DOLOG_ENV_NEW = "ne %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:167:20: warning: 'DOLOG_WORK_DEL' defined but not used [-
+Wunused-variable]
+  167 | const static char* DOLOG_WORK_DEL = "dw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:166:20: warning: 'DOLOG_WORK_NEW' defined but not used [-
+Wunused-variable]
+  166 | const static char* DOLOG_WORK_NEW = "nw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:165:20: warning: 'DOLOG_CATEGORY_DEL' defined but not use
+d [-Wunused-variable]
+  165 | const static char* DOLOG_CATEGORY_DEL = "dc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:164:20: warning: 'DOLOG_CATEGORY_NEW' defined but not use
+d [-Wunused-variable]
+  164 | const static char* DOLOG_CATEGORY_NEW = "nc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:163:20: warning: 'DOLOG_NOTE_BY_WID_DEL' defined but not 
+used [-Wunused-variable]
+  163 | const static char* DOLOG_NOTE_BY_WID_DEL = "dnw %1";
+      |                    ^~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:162:20: warning: 'DOLOG_NOTE_DEL' defined but not used [-
+Wunused-variable]
+  162 | const static char* DOLOG_NOTE_DEL = "dn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:161:20: warning: 'DOLOG_NOTE_NEW' defined but not used [-
+Wunused-variable]
+  161 | const static char* DOLOG_NOTE_NEW = "nn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:160:20: warning: 'DOLOG_XM_DEL' defined but not used [-Wu
+nused-variable]
+  160 | const static char* DOLOG_XM_DEL = "dx %1 %2";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:159:20: warning: 'DOLOG_XM_NEW' defined but not used [-Wu
+nused-variable]
+  159 | const static char* DOLOG_XM_NEW = "nx %1";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:136:20: warning: 'FOLDER_RESOURCES' defined but not used 
+[-Wunused-variable]
+  136 | const static char* FOLDER_RESOURCES = "resources";
+      |                    ^~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:135:20: warning: 'SM_FLAG' defined but not used [-Wunused
+-variable]
+  135 | const static char* SM_FLAG = "SHAREMEMORY_XXMOON";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:134:20: warning: 'HTTPS_PRE' defined but not used [-Wunus
+ed-variable]
+  134 | const static char* HTTPS_PRE = "https://";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:133:20: warning: 'HTTP_PRE' defined but not used [-Wunuse
+d-variable]
+  133 | const static char* HTTP_PRE = "http://";
+      |                    ^~~~~~~~
+../xxmoon/com/const.h:132:20: warning: 'CODE36' defined but not used [-Wunused-
+variable]
+  132 | const static char* CODE36 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      |                    ^~~~~~
+../xxmoon/com/const.h:131:20: warning: 'CODE_TABLE' defined but not used [-Wunu
+sed-variable]
+  131 | const static char* CODE_TABLE = "~r9y.2s=79#)aef^_kno%4h|u6?5wlz`({dc;v
+p<q3,0&x/!'7[-+mb@>gt*i}ja$";
+      |                    ^~~~~~~~~~
+../xxmoon/com/const.h:117:20: warning: 'LOG_LEVEL_ERROR' defined but not used [
+-Wunused-variable]
+  117 | const static char* LOG_LEVEL_ERROR = "error";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:116:20: warning: 'LOG_LEVEL_WARN' defined but not used [-
+Wunused-variable]
+  116 | const static char* LOG_LEVEL_WARN = "warn";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:115:20: warning: 'LOG_LEVEL_INFO' defined but not used [-
+Wunused-variable]
+  115 | const static char* LOG_LEVEL_INFO = "info";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:114:20: warning: 'LOG_LEVEL_DEBUG' defined but not used [
+-Wunused-variable]
+  114 | const static char* LOG_LEVEL_DEBUG = "debug";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:113:20: warning: 'LOG_LEVEL_TRACE' defined but not used [
+-Wunused-variable]
+  113 | const static char* LOG_LEVEL_TRACE = "trace";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:111:20: warning: 'NOTE_BJ_STYLE' defined but not used [-W
+unused-variable]
+  111 | const static char* NOTE_BJ_STYLE = " style='color:gray;text-align: righ
+t;font-style: italic; font-size: 14px;'";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:105:20: warning: 'ENV_K_SCRIPTS' defined but not used [-W
+unused-variable]
+  105 | const static char* ENV_K_SCRIPTS = "SCRIPTS";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:99:20: warning: 'ENV_K_LAST_EXCHANGE_VERSION' defined but
+ not used [-Wunused-variable]
+   99 | const static char* ENV_K_LAST_EXCHANGE_VERSION = "LAST_EXCHANGE_VERSION
+";
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:98:20: warning: 'ENV_K_LAST_IMP_TIME' defined but not use
+d [-Wunused-variable]
+   98 | const static char* ENV_K_LAST_IMP_TIME = "LAST_IMP_TIME";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:97:20: warning: 'ENV_K_LAST_IMP_PATH' defined but not use
+d [-Wunused-variable]
+   97 | const static char* ENV_K_LAST_IMP_PATH = "LAST_IMP_PATH";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:95:20: warning: 'VERSION' defined but not used [-Wunused-
+variable]
+   95 | const static char* VERSION = "v1.59.1";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:87:20: warning: 'sql_task_log_table' defined but not used
+ [-Wunused-variable]
+   87 | const static char* sql_task_log_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:81:20: warning: 'sql_env_table' defined but not used [-Wu
+nused-variable]
+   81 | const static char* sql_env_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:75:20: warning: 'sql_tag_table' defined but not used [-Wu
+nused-variable]
+   75 | const static char* sql_tag_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:57:20: warning: 'sql_xm_table' defined but not used [-Wun
+used-variable]
+   57 | const static char* sql_xm_table =
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:48:20: warning: 'sql_category_table' defined but not used
+ [-Wunused-variable]
+   48 | const static char* sql_category_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:46:20: warning: 'sql_note_script' defined but not used [-
+Wunused-variable]
+   46 | const static char* sql_note_script = "create unique index note_time_uin
+dex on note (time);";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:31:20: warning: 'sql_note_table' defined but not used [-W
+unused-variable]
+   31 | const static char* sql_note_table =
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:19:20: warning: 'sql_work_table' defined but not used [-W
+unused-variable]
+   19 | const static char* sql_work_table =
+      |                    ^~~~~~~~~~~~~~
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\basedao.o ..\xxmoon\db\basedao.cpp
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\categorydao.o ..\xxmoon\db\categorydao.cpp
+In file included from ../xxmoon/app.h:5,
+                 from ../xxmoon/com/global.h:17,
+                 from ..\xxmoon\db\categorydao.cpp:2:
+../xxmoon/com/const.h:173:20: warning: 'DOLOG_TaskLog_NEW' defined but not used
+ [-Wunused-variable]
+  173 | const static char* DOLOG_TaskLog_NEW = "nl %1";
+      |                    ^~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:172:20: warning: 'DOLOG_SQL' defined but not used [-Wunus
+ed-variable]
+  172 | const static char* DOLOG_SQL = "sql %1";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:171:20: warning: 'DOLOG_TAG_DEL' defined but not used [-W
+unused-variable]
+  171 | const static char* DOLOG_TAG_DEL = "dt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:170:20: warning: 'DOLOG_TAG_NEW' defined but not used [-W
+unused-variable]
+  170 | const static char* DOLOG_TAG_NEW = "nt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:169:20: warning: 'DOLOG_ENV_DEL' defined but not used [-W
+unused-variable]
+  169 | const static char* DOLOG_ENV_DEL = "de %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:168:20: warning: 'DOLOG_ENV_NEW' defined but not used [-W
+unused-variable]
+  168 | const static char* DOLOG_ENV_NEW = "ne %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:167:20: warning: 'DOLOG_WORK_DEL' defined but not used [-
+Wunused-variable]
+  167 | const static char* DOLOG_WORK_DEL = "dw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:166:20: warning: 'DOLOG_WORK_NEW' defined but not used [-
+Wunused-variable]
+  166 | const static char* DOLOG_WORK_NEW = "nw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:165:20: warning: 'DOLOG_CATEGORY_DEL' defined but not use
+d [-Wunused-variable]
+  165 | const static char* DOLOG_CATEGORY_DEL = "dc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:164:20: warning: 'DOLOG_CATEGORY_NEW' defined but not use
+d [-Wunused-variable]
+  164 | const static char* DOLOG_CATEGORY_NEW = "nc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:163:20: warning: 'DOLOG_NOTE_BY_WID_DEL' defined but not 
+used [-Wunused-variable]
+  163 | const static char* DOLOG_NOTE_BY_WID_DEL = "dnw %1";
+      |                    ^~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:162:20: warning: 'DOLOG_NOTE_DEL' defined but not used [-
+Wunused-variable]
+  162 | const static char* DOLOG_NOTE_DEL = "dn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:161:20: warning: 'DOLOG_NOTE_NEW' defined but not used [-
+Wunused-variable]
+  161 | const static char* DOLOG_NOTE_NEW = "nn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:160:20: warning: 'DOLOG_XM_DEL' defined but not used [-Wu
+nused-variable]
+  160 | const static char* DOLOG_XM_DEL = "dx %1 %2";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:159:20: warning: 'DOLOG_XM_NEW' defined but not used [-Wu
+nused-variable]
+  159 | const static char* DOLOG_XM_NEW = "nx %1";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:136:20: warning: 'FOLDER_RESOURCES' defined but not used 
+[-Wunused-variable]
+  136 | const static char* FOLDER_RESOURCES = "resources";
+      |                    ^~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:135:20: warning: 'SM_FLAG' defined but not used [-Wunused
+-variable]
+  135 | const static char* SM_FLAG = "SHAREMEMORY_XXMOON";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:134:20: warning: 'HTTPS_PRE' defined but not used [-Wunus
+ed-variable]
+  134 | const static char* HTTPS_PRE = "https://";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:133:20: warning: 'HTTP_PRE' defined but not used [-Wunuse
+d-variable]
+  133 | const static char* HTTP_PRE = "http://";
+      |                    ^~~~~~~~
+../xxmoon/com/const.h:132:20: warning: 'CODE36' defined but not used [-Wunused-
+variable]
+  132 | const static char* CODE36 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      |                    ^~~~~~
+../xxmoon/com/const.h:131:20: warning: 'CODE_TABLE' defined but not used [-Wunu
+sed-variable]
+  131 | const static char* CODE_TABLE = "~r9y.2s=79#)aef^_kno%4h|u6?5wlz`({dc;v
+p<q3,0&x/!'7[-+mb@>gt*i}ja$";
+      |                    ^~~~~~~~~~
+../xxmoon/com/const.h:117:20: warning: 'LOG_LEVEL_ERROR' defined but not used [
+-Wunused-variable]
+  117 | const static char* LOG_LEVEL_ERROR = "error";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:116:20: warning: 'LOG_LEVEL_WARN' defined but not used [-
+Wunused-variable]
+  116 | const static char* LOG_LEVEL_WARN = "warn";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:115:20: warning: 'LOG_LEVEL_INFO' defined but not used [-
+Wunused-variable]
+  115 | const static char* LOG_LEVEL_INFO = "info";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:114:20: warning: 'LOG_LEVEL_DEBUG' defined but not used [
+-Wunused-variable]
+  114 | const static char* LOG_LEVEL_DEBUG = "debug";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:113:20: warning: 'LOG_LEVEL_TRACE' defined but not used [
+-Wunused-variable]
+  113 | const static char* LOG_LEVEL_TRACE = "trace";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:111:20: warning: 'NOTE_BJ_STYLE' defined but not used [-W
+unused-variable]
+  111 | const static char* NOTE_BJ_STYLE = " style='color:gray;text-align: righ
+t;font-style: italic; font-size: 14px;'";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:105:20: warning: 'ENV_K_SCRIPTS' defined but not used [-W
+unused-variable]
+  105 | const static char* ENV_K_SCRIPTS = "SCRIPTS";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:99:20: warning: 'ENV_K_LAST_EXCHANGE_VERSION' defined but
+ not used [-Wunused-variable]
+   99 | const static char* ENV_K_LAST_EXCHANGE_VERSION = "LAST_EXCHANGE_VERSION
+";
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:98:20: warning: 'ENV_K_LAST_IMP_TIME' defined but not use
+d [-Wunused-variable]
+   98 | const static char* ENV_K_LAST_IMP_TIME = "LAST_IMP_TIME";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:97:20: warning: 'ENV_K_LAST_IMP_PATH' defined but not use
+d [-Wunused-variable]
+   97 | const static char* ENV_K_LAST_IMP_PATH = "LAST_IMP_PATH";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:95:20: warning: 'VERSION' defined but not used [-Wunused-
+variable]
+   95 | const static char* VERSION = "v1.59.1";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:87:20: warning: 'sql_task_log_table' defined but not used
+ [-Wunused-variable]
+   87 | const static char* sql_task_log_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:81:20: warning: 'sql_env_table' defined but not used [-Wu
+nused-variable]
+   81 | const static char* sql_env_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:75:20: warning: 'sql_tag_table' defined but not used [-Wu
+nused-variable]
+   75 | const static char* sql_tag_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:57:20: warning: 'sql_xm_table' defined but not used [-Wun
+used-variable]
+   57 | const static char* sql_xm_table =
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:48:20: warning: 'sql_category_table' defined but not used
+ [-Wunused-variable]
+   48 | const static char* sql_category_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:46:20: warning: 'sql_note_script' defined but not used [-
+Wunused-variable]
+   46 | const static char* sql_note_script = "create unique index note_time_uin
+dex on note (time);";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:31:20: warning: 'sql_note_table' defined but not used [-W
+unused-variable]
+   31 | const static char* sql_note_table =
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:19:20: warning: 'sql_work_table' defined but not used [-W
+unused-variable]
+   19 | const static char* sql_work_table =
+      |                    ^~~~~~~~~~~~~~
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\envdao.o ..\xxmoon\db\envdao.cpp
+In file included from ../xxmoon/app.h:5,
+                 from ../xxmoon/com/global.h:17,
+                 from ..\xxmoon\db\envdao.cpp:2:
+../xxmoon/com/const.h:173:20: warning: 'DOLOG_TaskLog_NEW' defined but not used
+ [-Wunused-variable]
+  173 | const static char* DOLOG_TaskLog_NEW = "nl %1";
+      |                    ^~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:172:20: warning: 'DOLOG_SQL' defined but not used [-Wunus
+ed-variable]
+  172 | const static char* DOLOG_SQL = "sql %1";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:171:20: warning: 'DOLOG_TAG_DEL' defined but not used [-W
+unused-variable]
+  171 | const static char* DOLOG_TAG_DEL = "dt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:170:20: warning: 'DOLOG_TAG_NEW' defined but not used [-W
+unused-variable]
+  170 | const static char* DOLOG_TAG_NEW = "nt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:169:20: warning: 'DOLOG_ENV_DEL' defined but not used [-W
+unused-variable]
+  169 | const static char* DOLOG_ENV_DEL = "de %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:168:20: warning: 'DOLOG_ENV_NEW' defined but not used [-W
+unused-variable]
+  168 | const static char* DOLOG_ENV_NEW = "ne %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:167:20: warning: 'DOLOG_WORK_DEL' defined but not used [-
+Wunused-variable]
+  167 | const static char* DOLOG_WORK_DEL = "dw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:166:20: warning: 'DOLOG_WORK_NEW' defined but not used [-
+Wunused-variable]
+  166 | const static char* DOLOG_WORK_NEW = "nw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:165:20: warning: 'DOLOG_CATEGORY_DEL' defined but not use
+d [-Wunused-variable]
+  165 | const static char* DOLOG_CATEGORY_DEL = "dc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:164:20: warning: 'DOLOG_CATEGORY_NEW' defined but not use
+d [-Wunused-variable]
+  164 | const static char* DOLOG_CATEGORY_NEW = "nc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:163:20: warning: 'DOLOG_NOTE_BY_WID_DEL' defined but not 
+used [-Wunused-variable]
+  163 | const static char* DOLOG_NOTE_BY_WID_DEL = "dnw %1";
+      |                    ^~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:162:20: warning: 'DOLOG_NOTE_DEL' defined but not used [-
+Wunused-variable]
+  162 | const static char* DOLOG_NOTE_DEL = "dn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:161:20: warning: 'DOLOG_NOTE_NEW' defined but not used [-
+Wunused-variable]
+  161 | const static char* DOLOG_NOTE_NEW = "nn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:160:20: warning: 'DOLOG_XM_DEL' defined but not used [-Wu
+nused-variable]
+  160 | const static char* DOLOG_XM_DEL = "dx %1 %2";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:159:20: warning: 'DOLOG_XM_NEW' defined but not used [-Wu
+nused-variable]
+  159 | const static char* DOLOG_XM_NEW = "nx %1";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:136:20: warning: 'FOLDER_RESOURCES' defined but not used 
+[-Wunused-variable]
+  136 | const static char* FOLDER_RESOURCES = "resources";
+      |                    ^~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:135:20: warning: 'SM_FLAG' defined but not used [-Wunused
+-variable]
+  135 | const static char* SM_FLAG = "SHAREMEMORY_XXMOON";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:134:20: warning: 'HTTPS_PRE' defined but not used [-Wunus
+ed-variable]
+  134 | const static char* HTTPS_PRE = "https://";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:133:20: warning: 'HTTP_PRE' defined but not used [-Wunuse
+d-variable]
+  133 | const static char* HTTP_PRE = "http://";
+      |                    ^~~~~~~~
+../xxmoon/com/const.h:132:20: warning: 'CODE36' defined but not used [-Wunused-
+variable]
+  132 | const static char* CODE36 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      |                    ^~~~~~
+../xxmoon/com/const.h:131:20: warning: 'CODE_TABLE' defined but not used [-Wunu
+sed-variable]
+  131 | const static char* CODE_TABLE = "~r9y.2s=79#)aef^_kno%4h|u6?5wlz`({dc;v
+p<q3,0&x/!'7[-+mb@>gt*i}ja$";
+      |                    ^~~~~~~~~~
+../xxmoon/com/const.h:117:20: warning: 'LOG_LEVEL_ERROR' defined but not used [
+-Wunused-variable]
+  117 | const static char* LOG_LEVEL_ERROR = "error";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:116:20: warning: 'LOG_LEVEL_WARN' defined but not used [-
+Wunused-variable]
+  116 | const static char* LOG_LEVEL_WARN = "warn";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:115:20: warning: 'LOG_LEVEL_INFO' defined but not used [-
+Wunused-variable]
+  115 | const static char* LOG_LEVEL_INFO = "info";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:114:20: warning: 'LOG_LEVEL_DEBUG' defined but not used [
+-Wunused-variable]
+  114 | const static char* LOG_LEVEL_DEBUG = "debug";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:113:20: warning: 'LOG_LEVEL_TRACE' defined but not used [
+-Wunused-variable]
+  113 | const static char* LOG_LEVEL_TRACE = "trace";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:111:20: warning: 'NOTE_BJ_STYLE' defined but not used [-W
+unused-variable]
+  111 | const static char* NOTE_BJ_STYLE = " style='color:gray;text-align: righ
+t;font-style: italic; font-size: 14px;'";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:105:20: warning: 'ENV_K_SCRIPTS' defined but not used [-W
+unused-variable]
+  105 | const static char* ENV_K_SCRIPTS = "SCRIPTS";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:99:20: warning: 'ENV_K_LAST_EXCHANGE_VERSION' defined but
+ not used [-Wunused-variable]
+   99 | const static char* ENV_K_LAST_EXCHANGE_VERSION = "LAST_EXCHANGE_VERSION
+";
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:98:20: warning: 'ENV_K_LAST_IMP_TIME' defined but not use
+d [-Wunused-variable]
+   98 | const static char* ENV_K_LAST_IMP_TIME = "LAST_IMP_TIME";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:97:20: warning: 'ENV_K_LAST_IMP_PATH' defined but not use
+d [-Wunused-variable]
+   97 | const static char* ENV_K_LAST_IMP_PATH = "LAST_IMP_PATH";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:95:20: warning: 'VERSION' defined but not used [-Wunused-
+variable]
+   95 | const static char* VERSION = "v1.59.1";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:87:20: warning: 'sql_task_log_table' defined but not used
+ [-Wunused-variable]
+   87 | const static char* sql_task_log_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:81:20: warning: 'sql_env_table' defined but not used [-Wu
+nused-variable]
+   81 | const static char* sql_env_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:75:20: warning: 'sql_tag_table' defined but not used [-Wu
+nused-variable]
+   75 | const static char* sql_tag_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:57:20: warning: 'sql_xm_table' defined but not used [-Wun
+used-variable]
+   57 | const static char* sql_xm_table =
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:48:20: warning: 'sql_category_table' defined but not used
+ [-Wunused-variable]
+   48 | const static char* sql_category_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:46:20: warning: 'sql_note_script' defined but not used [-
+Wunused-variable]
+   46 | const static char* sql_note_script = "create unique index note_time_uin
+dex on note (time);";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:31:20: warning: 'sql_note_table' defined but not used [-W
+unused-variable]
+   31 | const static char* sql_note_table =
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:19:20: warning: 'sql_work_table' defined but not used [-W
+unused-variable]
+   19 | const static char* sql_work_table =
+      |                    ^~~~~~~~~~~~~~
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\notedao.o ..\xxmoon\db\notedao.cpp
+In file included from ../xxmoon/app.h:5,
+                 from ../xxmoon/com/global.h:17,
+                 from ..\xxmoon\db\notedao.cpp:2:
+../xxmoon/com/const.h:173:20: warning: 'DOLOG_TaskLog_NEW' defined but not used
+ [-Wunused-variable]
+  173 | const static char* DOLOG_TaskLog_NEW = "nl %1";
+      |                    ^~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:172:20: warning: 'DOLOG_SQL' defined but not used [-Wunus
+ed-variable]
+  172 | const static char* DOLOG_SQL = "sql %1";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:171:20: warning: 'DOLOG_TAG_DEL' defined but not used [-W
+unused-variable]
+  171 | const static char* DOLOG_TAG_DEL = "dt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:170:20: warning: 'DOLOG_TAG_NEW' defined but not used [-W
+unused-variable]
+  170 | const static char* DOLOG_TAG_NEW = "nt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:169:20: warning: 'DOLOG_ENV_DEL' defined but not used [-W
+unused-variable]
+  169 | const static char* DOLOG_ENV_DEL = "de %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:168:20: warning: 'DOLOG_ENV_NEW' defined but not used [-W
+unused-variable]
+  168 | const static char* DOLOG_ENV_NEW = "ne %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:167:20: warning: 'DOLOG_WORK_DEL' defined but not used [-
+Wunused-variable]
+  167 | const static char* DOLOG_WORK_DEL = "dw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:166:20: warning: 'DOLOG_WORK_NEW' defined but not used [-
+Wunused-variable]
+  166 | const static char* DOLOG_WORK_NEW = "nw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:165:20: warning: 'DOLOG_CATEGORY_DEL' defined but not use
+d [-Wunused-variable]
+  165 | const static char* DOLOG_CATEGORY_DEL = "dc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:164:20: warning: 'DOLOG_CATEGORY_NEW' defined but not use
+d [-Wunused-variable]
+  164 | const static char* DOLOG_CATEGORY_NEW = "nc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:163:20: warning: 'DOLOG_NOTE_BY_WID_DEL' defined but not 
+used [-Wunused-variable]
+  163 | const static char* DOLOG_NOTE_BY_WID_DEL = "dnw %1";
+      |                    ^~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:162:20: warning: 'DOLOG_NOTE_DEL' defined but not used [-
+Wunused-variable]
+  162 | const static char* DOLOG_NOTE_DEL = "dn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:161:20: warning: 'DOLOG_NOTE_NEW' defined but not used [-
+Wunused-variable]
+  161 | const static char* DOLOG_NOTE_NEW = "nn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:160:20: warning: 'DOLOG_XM_DEL' defined but not used [-Wu
+nused-variable]
+  160 | const static char* DOLOG_XM_DEL = "dx %1 %2";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:159:20: warning: 'DOLOG_XM_NEW' defined but not used [-Wu
+nused-variable]
+  159 | const static char* DOLOG_XM_NEW = "nx %1";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:136:20: warning: 'FOLDER_RESOURCES' defined but not used 
+[-Wunused-variable]
+  136 | const static char* FOLDER_RESOURCES = "resources";
+      |                    ^~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:135:20: warning: 'SM_FLAG' defined but not used [-Wunused
+-variable]
+  135 | const static char* SM_FLAG = "SHAREMEMORY_XXMOON";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:134:20: warning: 'HTTPS_PRE' defined but not used [-Wunus
+ed-variable]
+  134 | const static char* HTTPS_PRE = "https://";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:133:20: warning: 'HTTP_PRE' defined but not used [-Wunuse
+d-variable]
+  133 | const static char* HTTP_PRE = "http://";
+      |                    ^~~~~~~~
+../xxmoon/com/const.h:132:20: warning: 'CODE36' defined but not used [-Wunused-
+variable]
+  132 | const static char* CODE36 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      |                    ^~~~~~
+../xxmoon/com/const.h:131:20: warning: 'CODE_TABLE' defined but not used [-Wunu
+sed-variable]
+  131 | const static char* CODE_TABLE = "~r9y.2s=79#)aef^_kno%4h|u6?5wlz`({dc;v
+p<q3,0&x/!'7[-+mb@>gt*i}ja$";
+      |                    ^~~~~~~~~~
+../xxmoon/com/const.h:117:20: warning: 'LOG_LEVEL_ERROR' defined but not used [
+-Wunused-variable]
+  117 | const static char* LOG_LEVEL_ERROR = "error";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:116:20: warning: 'LOG_LEVEL_WARN' defined but not used [-
+Wunused-variable]
+  116 | const static char* LOG_LEVEL_WARN = "warn";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:115:20: warning: 'LOG_LEVEL_INFO' defined but not used [-
+Wunused-variable]
+  115 | const static char* LOG_LEVEL_INFO = "info";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:114:20: warning: 'LOG_LEVEL_DEBUG' defined but not used [
+-Wunused-variable]
+  114 | const static char* LOG_LEVEL_DEBUG = "debug";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:113:20: warning: 'LOG_LEVEL_TRACE' defined but not used [
+-Wunused-variable]
+  113 | const static char* LOG_LEVEL_TRACE = "trace";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:111:20: warning: 'NOTE_BJ_STYLE' defined but not used [-W
+unused-variable]
+  111 | const static char* NOTE_BJ_STYLE = " style='color:gray;text-align: righ
+t;font-style: italic; font-size: 14px;'";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:105:20: warning: 'ENV_K_SCRIPTS' defined but not used [-W
+unused-variable]
+  105 | const static char* ENV_K_SCRIPTS = "SCRIPTS";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:99:20: warning: 'ENV_K_LAST_EXCHANGE_VERSION' defined but
+ not used [-Wunused-variable]
+   99 | const static char* ENV_K_LAST_EXCHANGE_VERSION = "LAST_EXCHANGE_VERSION
+";
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:98:20: warning: 'ENV_K_LAST_IMP_TIME' defined but not use
+d [-Wunused-variable]
+   98 | const static char* ENV_K_LAST_IMP_TIME = "LAST_IMP_TIME";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:97:20: warning: 'ENV_K_LAST_IMP_PATH' defined but not use
+d [-Wunused-variable]
+   97 | const static char* ENV_K_LAST_IMP_PATH = "LAST_IMP_PATH";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:95:20: warning: 'VERSION' defined but not used [-Wunused-
+variable]
+   95 | const static char* VERSION = "v1.59.1";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:87:20: warning: 'sql_task_log_table' defined but not used
+ [-Wunused-variable]
+   87 | const static char* sql_task_log_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:81:20: warning: 'sql_env_table' defined but not used [-Wu
+nused-variable]
+   81 | const static char* sql_env_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:75:20: warning: 'sql_tag_table' defined but not used [-Wu
+nused-variable]
+   75 | const static char* sql_tag_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:57:20: warning: 'sql_xm_table' defined but not used [-Wun
+used-variable]
+   57 | const static char* sql_xm_table =
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:48:20: warning: 'sql_category_table' defined but not used
+ [-Wunused-variable]
+   48 | const static char* sql_category_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:46:20: warning: 'sql_note_script' defined but not used [-
+Wunused-variable]
+   46 | const static char* sql_note_script = "create unique index note_time_uin
+dex on note (time);";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:31:20: warning: 'sql_note_table' defined but not used [-W
+unused-variable]
+   31 | const static char* sql_note_table =
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:19:20: warning: 'sql_work_table' defined but not used [-W
+unused-variable]
+   19 | const static char* sql_work_table =
+      |                    ^~~~~~~~~~~~~~
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\tagdao.o ..\xxmoon\db\tagdao.cpp
+In file included from ../xxmoon/app.h:5,
+                 from ../xxmoon/com/global.h:17,
+                 from ..\xxmoon\db\tagdao.cpp:2:
+../xxmoon/com/const.h:173:20: warning: 'DOLOG_TaskLog_NEW' defined but not used
+ [-Wunused-variable]
+  173 | const static char* DOLOG_TaskLog_NEW = "nl %1";
+      |                    ^~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:172:20: warning: 'DOLOG_SQL' defined but not used [-Wunus
+ed-variable]
+  172 | const static char* DOLOG_SQL = "sql %1";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:171:20: warning: 'DOLOG_TAG_DEL' defined but not used [-W
+unused-variable]
+  171 | const static char* DOLOG_TAG_DEL = "dt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:170:20: warning: 'DOLOG_TAG_NEW' defined but not used [-W
+unused-variable]
+  170 | const static char* DOLOG_TAG_NEW = "nt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:169:20: warning: 'DOLOG_ENV_DEL' defined but not used [-W
+unused-variable]
+  169 | const static char* DOLOG_ENV_DEL = "de %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:168:20: warning: 'DOLOG_ENV_NEW' defined but not used [-W
+unused-variable]
+  168 | const static char* DOLOG_ENV_NEW = "ne %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:167:20: warning: 'DOLOG_WORK_DEL' defined but not used [-
+Wunused-variable]
+  167 | const static char* DOLOG_WORK_DEL = "dw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:166:20: warning: 'DOLOG_WORK_NEW' defined but not used [-
+Wunused-variable]
+  166 | const static char* DOLOG_WORK_NEW = "nw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:165:20: warning: 'DOLOG_CATEGORY_DEL' defined but not use
+d [-Wunused-variable]
+  165 | const static char* DOLOG_CATEGORY_DEL = "dc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:164:20: warning: 'DOLOG_CATEGORY_NEW' defined but not use
+d [-Wunused-variable]
+  164 | const static char* DOLOG_CATEGORY_NEW = "nc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:163:20: warning: 'DOLOG_NOTE_BY_WID_DEL' defined but not 
+used [-Wunused-variable]
+  163 | const static char* DOLOG_NOTE_BY_WID_DEL = "dnw %1";
+      |                    ^~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:162:20: warning: 'DOLOG_NOTE_DEL' defined but not used [-
+Wunused-variable]
+  162 | const static char* DOLOG_NOTE_DEL = "dn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:161:20: warning: 'DOLOG_NOTE_NEW' defined but not used [-
+Wunused-variable]
+  161 | const static char* DOLOG_NOTE_NEW = "nn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:160:20: warning: 'DOLOG_XM_DEL' defined but not used [-Wu
+nused-variable]
+  160 | const static char* DOLOG_XM_DEL = "dx %1 %2";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:159:20: warning: 'DOLOG_XM_NEW' defined but not used [-Wu
+nused-variable]
+  159 | const static char* DOLOG_XM_NEW = "nx %1";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:136:20: warning: 'FOLDER_RESOURCES' defined but not used 
+[-Wunused-variable]
+  136 | const static char* FOLDER_RESOURCES = "resources";
+      |                    ^~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:135:20: warning: 'SM_FLAG' defined but not used [-Wunused
+-variable]
+  135 | const static char* SM_FLAG = "SHAREMEMORY_XXMOON";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:134:20: warning: 'HTTPS_PRE' defined but not used [-Wunus
+ed-variable]
+  134 | const static char* HTTPS_PRE = "https://";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:133:20: warning: 'HTTP_PRE' defined but not used [-Wunuse
+d-variable]
+  133 | const static char* HTTP_PRE = "http://";
+      |                    ^~~~~~~~
+../xxmoon/com/const.h:132:20: warning: 'CODE36' defined but not used [-Wunused-
+variable]
+  132 | const static char* CODE36 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      |                    ^~~~~~
+../xxmoon/com/const.h:131:20: warning: 'CODE_TABLE' defined but not used [-Wunu
+sed-variable]
+  131 | const static char* CODE_TABLE = "~r9y.2s=79#)aef^_kno%4h|u6?5wlz`({dc;v
+p<q3,0&x/!'7[-+mb@>gt*i}ja$";
+      |                    ^~~~~~~~~~
+../xxmoon/com/const.h:117:20: warning: 'LOG_LEVEL_ERROR' defined but not used [
+-Wunused-variable]
+  117 | const static char* LOG_LEVEL_ERROR = "error";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:116:20: warning: 'LOG_LEVEL_WARN' defined but not used [-
+Wunused-variable]
+  116 | const static char* LOG_LEVEL_WARN = "warn";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:115:20: warning: 'LOG_LEVEL_INFO' defined but not used [-
+Wunused-variable]
+  115 | const static char* LOG_LEVEL_INFO = "info";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:114:20: warning: 'LOG_LEVEL_DEBUG' defined but not used [
+-Wunused-variable]
+  114 | const static char* LOG_LEVEL_DEBUG = "debug";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:113:20: warning: 'LOG_LEVEL_TRACE' defined but not used [
+-Wunused-variable]
+  113 | const static char* LOG_LEVEL_TRACE = "trace";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:111:20: warning: 'NOTE_BJ_STYLE' defined but not used [-W
+unused-variable]
+  111 | const static char* NOTE_BJ_STYLE = " style='color:gray;text-align: righ
+t;font-style: italic; font-size: 14px;'";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:105:20: warning: 'ENV_K_SCRIPTS' defined but not used [-W
+unused-variable]
+  105 | const static char* ENV_K_SCRIPTS = "SCRIPTS";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:99:20: warning: 'ENV_K_LAST_EXCHANGE_VERSION' defined but
+ not used [-Wunused-variable]
+   99 | const static char* ENV_K_LAST_EXCHANGE_VERSION = "LAST_EXCHANGE_VERSION
+";
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:98:20: warning: 'ENV_K_LAST_IMP_TIME' defined but not use
+d [-Wunused-variable]
+   98 | const static char* ENV_K_LAST_IMP_TIME = "LAST_IMP_TIME";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:97:20: warning: 'ENV_K_LAST_IMP_PATH' defined but not use
+d [-Wunused-variable]
+   97 | const static char* ENV_K_LAST_IMP_PATH = "LAST_IMP_PATH";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:95:20: warning: 'VERSION' defined but not used [-Wunused-
+variable]
+   95 | const static char* VERSION = "v1.59.1";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:87:20: warning: 'sql_task_log_table' defined but not used
+ [-Wunused-variable]
+   87 | const static char* sql_task_log_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:81:20: warning: 'sql_env_table' defined but not used [-Wu
+nused-variable]
+   81 | const static char* sql_env_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:75:20: warning: 'sql_tag_table' defined but not used [-Wu
+nused-variable]
+   75 | const static char* sql_tag_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:57:20: warning: 'sql_xm_table' defined but not used [-Wun
+used-variable]
+   57 | const static char* sql_xm_table =
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:48:20: warning: 'sql_category_table' defined but not used
+ [-Wunused-variable]
+   48 | const static char* sql_category_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:46:20: warning: 'sql_note_script' defined but not used [-
+Wunused-variable]
+   46 | const static char* sql_note_script = "create unique index note_time_uin
+dex on note (time);";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:31:20: warning: 'sql_note_table' defined but not used [-W
+unused-variable]
+   31 | const static char* sql_note_table =
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:19:20: warning: 'sql_work_table' defined but not used [-W
+unused-variable]
+   19 | const static char* sql_work_table =
+      |                    ^~~~~~~~~~~~~~
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\tasklogdao.o ..\xxmoon\db\tasklogdao.cpp
+In file included from ../xxmoon/app.h:5,
+                 from ../xxmoon/com/global.h:17,
+                 from ..\xxmoon\db\tasklogdao.cpp:2:
+../xxmoon/com/const.h:173:20: warning: 'DOLOG_TaskLog_NEW' defined but not used
+ [-Wunused-variable]
+  173 | const static char* DOLOG_TaskLog_NEW = "nl %1";
+      |                    ^~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:172:20: warning: 'DOLOG_SQL' defined but not used [-Wunus
+ed-variable]
+  172 | const static char* DOLOG_SQL = "sql %1";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:171:20: warning: 'DOLOG_TAG_DEL' defined but not used [-W
+unused-variable]
+  171 | const static char* DOLOG_TAG_DEL = "dt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:170:20: warning: 'DOLOG_TAG_NEW' defined but not used [-W
+unused-variable]
+  170 | const static char* DOLOG_TAG_NEW = "nt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:169:20: warning: 'DOLOG_ENV_DEL' defined but not used [-W
+unused-variable]
+  169 | const static char* DOLOG_ENV_DEL = "de %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:168:20: warning: 'DOLOG_ENV_NEW' defined but not used [-W
+unused-variable]
+  168 | const static char* DOLOG_ENV_NEW = "ne %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:167:20: warning: 'DOLOG_WORK_DEL' defined but not used [-
+Wunused-variable]
+  167 | const static char* DOLOG_WORK_DEL = "dw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:166:20: warning: 'DOLOG_WORK_NEW' defined but not used [-
+Wunused-variable]
+  166 | const static char* DOLOG_WORK_NEW = "nw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:165:20: warning: 'DOLOG_CATEGORY_DEL' defined but not use
+d [-Wunused-variable]
+  165 | const static char* DOLOG_CATEGORY_DEL = "dc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:164:20: warning: 'DOLOG_CATEGORY_NEW' defined but not use
+d [-Wunused-variable]
+  164 | const static char* DOLOG_CATEGORY_NEW = "nc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:163:20: warning: 'DOLOG_NOTE_BY_WID_DEL' defined but not 
+used [-Wunused-variable]
+  163 | const static char* DOLOG_NOTE_BY_WID_DEL = "dnw %1";
+      |                    ^~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:162:20: warning: 'DOLOG_NOTE_DEL' defined but not used [-
+Wunused-variable]
+  162 | const static char* DOLOG_NOTE_DEL = "dn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:161:20: warning: 'DOLOG_NOTE_NEW' defined but not used [-
+Wunused-variable]
+  161 | const static char* DOLOG_NOTE_NEW = "nn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:160:20: warning: 'DOLOG_XM_DEL' defined but not used [-Wu
+nused-variable]
+  160 | const static char* DOLOG_XM_DEL = "dx %1 %2";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:159:20: warning: 'DOLOG_XM_NEW' defined but not used [-Wu
+nused-variable]
+  159 | const static char* DOLOG_XM_NEW = "nx %1";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:136:20: warning: 'FOLDER_RESOURCES' defined but not used 
+[-Wunused-variable]
+  136 | const static char* FOLDER_RESOURCES = "resources";
+      |                    ^~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:135:20: warning: 'SM_FLAG' defined but not used [-Wunused
+-variable]
+  135 | const static char* SM_FLAG = "SHAREMEMORY_XXMOON";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:134:20: warning: 'HTTPS_PRE' defined but not used [-Wunus
+ed-variable]
+  134 | const static char* HTTPS_PRE = "https://";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:133:20: warning: 'HTTP_PRE' defined but not used [-Wunuse
+d-variable]
+  133 | const static char* HTTP_PRE = "http://";
+      |                    ^~~~~~~~
+../xxmoon/com/const.h:132:20: warning: 'CODE36' defined but not used [-Wunused-
+variable]
+  132 | const static char* CODE36 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      |                    ^~~~~~
+../xxmoon/com/const.h:131:20: warning: 'CODE_TABLE' defined but not used [-Wunu
+sed-variable]
+  131 | const static char* CODE_TABLE = "~r9y.2s=79#)aef^_kno%4h|u6?5wlz`({dc;v
+p<q3,0&x/!'7[-+mb@>gt*i}ja$";
+      |                    ^~~~~~~~~~
+../xxmoon/com/const.h:117:20: warning: 'LOG_LEVEL_ERROR' defined but not used [
+-Wunused-variable]
+  117 | const static char* LOG_LEVEL_ERROR = "error";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:116:20: warning: 'LOG_LEVEL_WARN' defined but not used [-
+Wunused-variable]
+  116 | const static char* LOG_LEVEL_WARN = "warn";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:115:20: warning: 'LOG_LEVEL_INFO' defined but not used [-
+Wunused-variable]
+  115 | const static char* LOG_LEVEL_INFO = "info";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:114:20: warning: 'LOG_LEVEL_DEBUG' defined but not used [
+-Wunused-variable]
+  114 | const static char* LOG_LEVEL_DEBUG = "debug";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:113:20: warning: 'LOG_LEVEL_TRACE' defined but not used [
+-Wunused-variable]
+  113 | const static char* LOG_LEVEL_TRACE = "trace";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:111:20: warning: 'NOTE_BJ_STYLE' defined but not used [-W
+unused-variable]
+  111 | const static char* NOTE_BJ_STYLE = " style='color:gray;text-align: righ
+t;font-style: italic; font-size: 14px;'";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:105:20: warning: 'ENV_K_SCRIPTS' defined but not used [-W
+unused-variable]
+  105 | const static char* ENV_K_SCRIPTS = "SCRIPTS";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:99:20: warning: 'ENV_K_LAST_EXCHANGE_VERSION' defined but
+ not used [-Wunused-variable]
+   99 | const static char* ENV_K_LAST_EXCHANGE_VERSION = "LAST_EXCHANGE_VERSION
+";
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:98:20: warning: 'ENV_K_LAST_IMP_TIME' defined but not use
+d [-Wunused-variable]
+   98 | const static char* ENV_K_LAST_IMP_TIME = "LAST_IMP_TIME";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:97:20: warning: 'ENV_K_LAST_IMP_PATH' defined but not use
+d [-Wunused-variable]
+   97 | const static char* ENV_K_LAST_IMP_PATH = "LAST_IMP_PATH";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:95:20: warning: 'VERSION' defined but not used [-Wunused-
+variable]
+   95 | const static char* VERSION = "v1.59.1";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:87:20: warning: 'sql_task_log_table' defined but not used
+ [-Wunused-variable]
+   87 | const static char* sql_task_log_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:81:20: warning: 'sql_env_table' defined but not used [-Wu
+nused-variable]
+   81 | const static char* sql_env_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:75:20: warning: 'sql_tag_table' defined but not used [-Wu
+nused-variable]
+   75 | const static char* sql_tag_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:57:20: warning: 'sql_xm_table' defined but not used [-Wun
+used-variable]
+   57 | const static char* sql_xm_table =
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:48:20: warning: 'sql_category_table' defined but not used
+ [-Wunused-variable]
+   48 | const static char* sql_category_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:46:20: warning: 'sql_note_script' defined but not used [-
+Wunused-variable]
+   46 | const static char* sql_note_script = "create unique index note_time_uin
+dex on note (time);";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:31:20: warning: 'sql_note_table' defined but not used [-W
+unused-variable]
+   31 | const static char* sql_note_table =
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:19:20: warning: 'sql_work_table' defined but not used [-W
+unused-variable]
+   19 | const static char* sql_work_table =
+      |                    ^~~~~~~~~~~~~~
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\workdao.o ..\xxmoon\db\workdao.cpp
+In file included from ../xxmoon/app.h:5,
+                 from ../xxmoon/com/global.h:17,
+                 from ..\xxmoon\db\workdao.cpp:2:
+../xxmoon/com/const.h:173:20: warning: 'DOLOG_TaskLog_NEW' defined but not used
+ [-Wunused-variable]
+  173 | const static char* DOLOG_TaskLog_NEW = "nl %1";
+      |                    ^~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:172:20: warning: 'DOLOG_SQL' defined but not used [-Wunus
+ed-variable]
+  172 | const static char* DOLOG_SQL = "sql %1";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:171:20: warning: 'DOLOG_TAG_DEL' defined but not used [-W
+unused-variable]
+  171 | const static char* DOLOG_TAG_DEL = "dt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:170:20: warning: 'DOLOG_TAG_NEW' defined but not used [-W
+unused-variable]
+  170 | const static char* DOLOG_TAG_NEW = "nt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:169:20: warning: 'DOLOG_ENV_DEL' defined but not used [-W
+unused-variable]
+  169 | const static char* DOLOG_ENV_DEL = "de %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:168:20: warning: 'DOLOG_ENV_NEW' defined but not used [-W
+unused-variable]
+  168 | const static char* DOLOG_ENV_NEW = "ne %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:167:20: warning: 'DOLOG_WORK_DEL' defined but not used [-
+Wunused-variable]
+  167 | const static char* DOLOG_WORK_DEL = "dw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:166:20: warning: 'DOLOG_WORK_NEW' defined but not used [-
+Wunused-variable]
+  166 | const static char* DOLOG_WORK_NEW = "nw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:165:20: warning: 'DOLOG_CATEGORY_DEL' defined but not use
+d [-Wunused-variable]
+  165 | const static char* DOLOG_CATEGORY_DEL = "dc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:164:20: warning: 'DOLOG_CATEGORY_NEW' defined but not use
+d [-Wunused-variable]
+  164 | const static char* DOLOG_CATEGORY_NEW = "nc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:163:20: warning: 'DOLOG_NOTE_BY_WID_DEL' defined but not 
+used [-Wunused-variable]
+  163 | const static char* DOLOG_NOTE_BY_WID_DEL = "dnw %1";
+      |                    ^~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:162:20: warning: 'DOLOG_NOTE_DEL' defined but not used [-
+Wunused-variable]
+  162 | const static char* DOLOG_NOTE_DEL = "dn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:161:20: warning: 'DOLOG_NOTE_NEW' defined but not used [-
+Wunused-variable]
+  161 | const static char* DOLOG_NOTE_NEW = "nn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:160:20: warning: 'DOLOG_XM_DEL' defined but not used [-Wu
+nused-variable]
+  160 | const static char* DOLOG_XM_DEL = "dx %1 %2";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:159:20: warning: 'DOLOG_XM_NEW' defined but not used [-Wu
+nused-variable]
+  159 | const static char* DOLOG_XM_NEW = "nx %1";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:136:20: warning: 'FOLDER_RESOURCES' defined but not used 
+[-Wunused-variable]
+  136 | const static char* FOLDER_RESOURCES = "resources";
+      |                    ^~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:135:20: warning: 'SM_FLAG' defined but not used [-Wunused
+-variable]
+  135 | const static char* SM_FLAG = "SHAREMEMORY_XXMOON";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:134:20: warning: 'HTTPS_PRE' defined but not used [-Wunus
+ed-variable]
+  134 | const static char* HTTPS_PRE = "https://";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:133:20: warning: 'HTTP_PRE' defined but not used [-Wunuse
+d-variable]
+  133 | const static char* HTTP_PRE = "http://";
+      |                    ^~~~~~~~
+../xxmoon/com/const.h:132:20: warning: 'CODE36' defined but not used [-Wunused-
+variable]
+  132 | const static char* CODE36 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      |                    ^~~~~~
+../xxmoon/com/const.h:131:20: warning: 'CODE_TABLE' defined but not used [-Wunu
+sed-variable]
+  131 | const static char* CODE_TABLE = "~r9y.2s=79#)aef^_kno%4h|u6?5wlz`({dc;v
+p<q3,0&x/!'7[-+mb@>gt*i}ja$";
+      |                    ^~~~~~~~~~
+../xxmoon/com/const.h:117:20: warning: 'LOG_LEVEL_ERROR' defined but not used [
+-Wunused-variable]
+  117 | const static char* LOG_LEVEL_ERROR = "error";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:116:20: warning: 'LOG_LEVEL_WARN' defined but not used [-
+Wunused-variable]
+  116 | const static char* LOG_LEVEL_WARN = "warn";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:115:20: warning: 'LOG_LEVEL_INFO' defined but not used [-
+Wunused-variable]
+  115 | const static char* LOG_LEVEL_INFO = "info";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:114:20: warning: 'LOG_LEVEL_DEBUG' defined but not used [
+-Wunused-variable]
+  114 | const static char* LOG_LEVEL_DEBUG = "debug";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:113:20: warning: 'LOG_LEVEL_TRACE' defined but not used [
+-Wunused-variable]
+  113 | const static char* LOG_LEVEL_TRACE = "trace";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:111:20: warning: 'NOTE_BJ_STYLE' defined but not used [-W
+unused-variable]
+  111 | const static char* NOTE_BJ_STYLE = " style='color:gray;text-align: righ
+t;font-style: italic; font-size: 14px;'";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:105:20: warning: 'ENV_K_SCRIPTS' defined but not used [-W
+unused-variable]
+  105 | const static char* ENV_K_SCRIPTS = "SCRIPTS";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:99:20: warning: 'ENV_K_LAST_EXCHANGE_VERSION' defined but
+ not used [-Wunused-variable]
+   99 | const static char* ENV_K_LAST_EXCHANGE_VERSION = "LAST_EXCHANGE_VERSION
+";
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:98:20: warning: 'ENV_K_LAST_IMP_TIME' defined but not use
+d [-Wunused-variable]
+   98 | const static char* ENV_K_LAST_IMP_TIME = "LAST_IMP_TIME";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:97:20: warning: 'ENV_K_LAST_IMP_PATH' defined but not use
+d [-Wunused-variable]
+   97 | const static char* ENV_K_LAST_IMP_PATH = "LAST_IMP_PATH";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:95:20: warning: 'VERSION' defined but not used [-Wunused-
+variable]
+   95 | const static char* VERSION = "v1.59.1";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:87:20: warning: 'sql_task_log_table' defined but not used
+ [-Wunused-variable]
+   87 | const static char* sql_task_log_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:81:20: warning: 'sql_env_table' defined but not used [-Wu
+nused-variable]
+   81 | const static char* sql_env_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:75:20: warning: 'sql_tag_table' defined but not used [-Wu
+nused-variable]
+   75 | const static char* sql_tag_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:57:20: warning: 'sql_xm_table' defined but not used [-Wun
+used-variable]
+   57 | const static char* sql_xm_table =
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:48:20: warning: 'sql_category_table' defined but not used
+ [-Wunused-variable]
+   48 | const static char* sql_category_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:46:20: warning: 'sql_note_script' defined but not used [-
+Wunused-variable]
+   46 | const static char* sql_note_script = "create unique index note_time_uin
+dex on note (time);";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:31:20: warning: 'sql_note_table' defined but not used [-W
+unused-variable]
+   31 | const static char* sql_note_table =
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:19:20: warning: 'sql_work_table' defined but not used [-W
+unused-variable]
+   19 | const static char* sql_work_table =
+      |                    ^~~~~~~~~~~~~~
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\xmdao.o ..\xxmoon\db\xmdao.cpp
+In file included from ../xxmoon/app.h:5,
+                 from ../xxmoon/com/global.h:17,
+                 from ..\xxmoon\db\xmdao.cpp:2:
+../xxmoon/com/const.h:173:20: warning: 'DOLOG_TaskLog_NEW' defined but not used
+ [-Wunused-variable]
+  173 | const static char* DOLOG_TaskLog_NEW = "nl %1";
+      |                    ^~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:172:20: warning: 'DOLOG_SQL' defined but not used [-Wunus
+ed-variable]
+  172 | const static char* DOLOG_SQL = "sql %1";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:171:20: warning: 'DOLOG_TAG_DEL' defined but not used [-W
+unused-variable]
+  171 | const static char* DOLOG_TAG_DEL = "dt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:170:20: warning: 'DOLOG_TAG_NEW' defined but not used [-W
+unused-variable]
+  170 | const static char* DOLOG_TAG_NEW = "nt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:169:20: warning: 'DOLOG_ENV_DEL' defined but not used [-W
+unused-variable]
+  169 | const static char* DOLOG_ENV_DEL = "de %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:168:20: warning: 'DOLOG_ENV_NEW' defined but not used [-W
+unused-variable]
+  168 | const static char* DOLOG_ENV_NEW = "ne %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:167:20: warning: 'DOLOG_WORK_DEL' defined but not used [-
+Wunused-variable]
+  167 | const static char* DOLOG_WORK_DEL = "dw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:166:20: warning: 'DOLOG_WORK_NEW' defined but not used [-
+Wunused-variable]
+  166 | const static char* DOLOG_WORK_NEW = "nw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:165:20: warning: 'DOLOG_CATEGORY_DEL' defined but not use
+d [-Wunused-variable]
+  165 | const static char* DOLOG_CATEGORY_DEL = "dc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:164:20: warning: 'DOLOG_CATEGORY_NEW' defined but not use
+d [-Wunused-variable]
+  164 | const static char* DOLOG_CATEGORY_NEW = "nc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:163:20: warning: 'DOLOG_NOTE_BY_WID_DEL' defined but not 
+used [-Wunused-variable]
+  163 | const static char* DOLOG_NOTE_BY_WID_DEL = "dnw %1";
+      |                    ^~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:162:20: warning: 'DOLOG_NOTE_DEL' defined but not used [-
+Wunused-variable]
+  162 | const static char* DOLOG_NOTE_DEL = "dn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:161:20: warning: 'DOLOG_NOTE_NEW' defined but not used [-
+Wunused-variable]
+  161 | const static char* DOLOG_NOTE_NEW = "nn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:160:20: warning: 'DOLOG_XM_DEL' defined but not used [-Wu
+nused-variable]
+  160 | const static char* DOLOG_XM_DEL = "dx %1 %2";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:159:20: warning: 'DOLOG_XM_NEW' defined but not used [-Wu
+nused-variable]
+  159 | const static char* DOLOG_XM_NEW = "nx %1";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:136:20: warning: 'FOLDER_RESOURCES' defined but not used 
+[-Wunused-variable]
+  136 | const static char* FOLDER_RESOURCES = "resources";
+      |                    ^~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:135:20: warning: 'SM_FLAG' defined but not used [-Wunused
+-variable]
+  135 | const static char* SM_FLAG = "SHAREMEMORY_XXMOON";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:134:20: warning: 'HTTPS_PRE' defined but not used [-Wunus
+ed-variable]
+  134 | const static char* HTTPS_PRE = "https://";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:133:20: warning: 'HTTP_PRE' defined but not used [-Wunuse
+d-variable]
+  133 | const static char* HTTP_PRE = "http://";
+      |                    ^~~~~~~~
+../xxmoon/com/const.h:132:20: warning: 'CODE36' defined but not used [-Wunused-
+variable]
+  132 | const static char* CODE36 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      |                    ^~~~~~
+../xxmoon/com/const.h:131:20: warning: 'CODE_TABLE' defined but not used [-Wunu
+sed-variable]
+  131 | const static char* CODE_TABLE = "~r9y.2s=79#)aef^_kno%4h|u6?5wlz`({dc;v
+p<q3,0&x/!'7[-+mb@>gt*i}ja$";
+      |                    ^~~~~~~~~~
+../xxmoon/com/const.h:117:20: warning: 'LOG_LEVEL_ERROR' defined but not used [
+-Wunused-variable]
+  117 | const static char* LOG_LEVEL_ERROR = "error";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:116:20: warning: 'LOG_LEVEL_WARN' defined but not used [-
+Wunused-variable]
+  116 | const static char* LOG_LEVEL_WARN = "warn";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:115:20: warning: 'LOG_LEVEL_INFO' defined but not used [-
+Wunused-variable]
+  115 | const static char* LOG_LEVEL_INFO = "info";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:114:20: warning: 'LOG_LEVEL_DEBUG' defined but not used [
+-Wunused-variable]
+  114 | const static char* LOG_LEVEL_DEBUG = "debug";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:113:20: warning: 'LOG_LEVEL_TRACE' defined but not used [
+-Wunused-variable]
+  113 | const static char* LOG_LEVEL_TRACE = "trace";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:111:20: warning: 'NOTE_BJ_STYLE' defined but not used [-W
+unused-variable]
+  111 | const static char* NOTE_BJ_STYLE = " style='color:gray;text-align: righ
+t;font-style: italic; font-size: 14px;'";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:105:20: warning: 'ENV_K_SCRIPTS' defined but not used [-W
+unused-variable]
+  105 | const static char* ENV_K_SCRIPTS = "SCRIPTS";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:99:20: warning: 'ENV_K_LAST_EXCHANGE_VERSION' defined but
+ not used [-Wunused-variable]
+   99 | const static char* ENV_K_LAST_EXCHANGE_VERSION = "LAST_EXCHANGE_VERSION
+";
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:98:20: warning: 'ENV_K_LAST_IMP_TIME' defined but not use
+d [-Wunused-variable]
+   98 | const static char* ENV_K_LAST_IMP_TIME = "LAST_IMP_TIME";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:97:20: warning: 'ENV_K_LAST_IMP_PATH' defined but not use
+d [-Wunused-variable]
+   97 | const static char* ENV_K_LAST_IMP_PATH = "LAST_IMP_PATH";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:95:20: warning: 'VERSION' defined but not used [-Wunused-
+variable]
+   95 | const static char* VERSION = "v1.59.1";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:87:20: warning: 'sql_task_log_table' defined but not used
+ [-Wunused-variable]
+   87 | const static char* sql_task_log_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:81:20: warning: 'sql_env_table' defined but not used [-Wu
+nused-variable]
+   81 | const static char* sql_env_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:75:20: warning: 'sql_tag_table' defined but not used [-Wu
+nused-variable]
+   75 | const static char* sql_tag_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:57:20: warning: 'sql_xm_table' defined but not used [-Wun
+used-variable]
+   57 | const static char* sql_xm_table =
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:48:20: warning: 'sql_category_table' defined but not used
+ [-Wunused-variable]
+   48 | const static char* sql_category_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:46:20: warning: 'sql_note_script' defined but not used [-
+Wunused-variable]
+   46 | const static char* sql_note_script = "create unique index note_time_uin
+dex on note (time);";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:31:20: warning: 'sql_note_table' defined but not used [-W
+unused-variable]
+   31 | const static char* sql_note_table =
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:19:20: warning: 'sql_work_table' defined but not used [-W
+unused-variable]
+   19 | const static char* sql_work_table =
+      |                    ^~~~~~~~~~~~~~
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\category.o ..\xxmoon\model\category.cpp
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\cfg.o ..\xxmoon\model\cfg.cpp
+..\xxmoon\model\cfg.cpp:11:16: warning: 'QString systemCfgFile()' defined but n
+ot used [-Wunused-function]
+   11 | static QString systemCfgFile() {
+      |                ^~~~~~~~~~~~~
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\note.o ..\xxmoon\model\note.cpp
+In file included from ../xxmoon/app.h:5,
+                 from ../xxmoon/com/global.h:17,
+                 from ..\xxmoon\model\note.cpp:2:
+../xxmoon/com/const.h:173:20: warning: 'DOLOG_TaskLog_NEW' defined but not used
+ [-Wunused-variable]
+  173 | const static char* DOLOG_TaskLog_NEW = "nl %1";
+      |                    ^~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:172:20: warning: 'DOLOG_SQL' defined but not used [-Wunus
+ed-variable]
+  172 | const static char* DOLOG_SQL = "sql %1";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:171:20: warning: 'DOLOG_TAG_DEL' defined but not used [-W
+unused-variable]
+  171 | const static char* DOLOG_TAG_DEL = "dt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:170:20: warning: 'DOLOG_TAG_NEW' defined but not used [-W
+unused-variable]
+  170 | const static char* DOLOG_TAG_NEW = "nt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:169:20: warning: 'DOLOG_ENV_DEL' defined but not used [-W
+unused-variable]
+  169 | const static char* DOLOG_ENV_DEL = "de %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:168:20: warning: 'DOLOG_ENV_NEW' defined but not used [-W
+unused-variable]
+  168 | const static char* DOLOG_ENV_NEW = "ne %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:167:20: warning: 'DOLOG_WORK_DEL' defined but not used [-
+Wunused-variable]
+  167 | const static char* DOLOG_WORK_DEL = "dw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:166:20: warning: 'DOLOG_WORK_NEW' defined but not used [-
+Wunused-variable]
+  166 | const static char* DOLOG_WORK_NEW = "nw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:165:20: warning: 'DOLOG_CATEGORY_DEL' defined but not use
+d [-Wunused-variable]
+  165 | const static char* DOLOG_CATEGORY_DEL = "dc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:164:20: warning: 'DOLOG_CATEGORY_NEW' defined but not use
+d [-Wunused-variable]
+  164 | const static char* DOLOG_CATEGORY_NEW = "nc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:163:20: warning: 'DOLOG_NOTE_BY_WID_DEL' defined but not 
+used [-Wunused-variable]
+  163 | const static char* DOLOG_NOTE_BY_WID_DEL = "dnw %1";
+      |                    ^~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:162:20: warning: 'DOLOG_NOTE_DEL' defined but not used [-
+Wunused-variable]
+  162 | const static char* DOLOG_NOTE_DEL = "dn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:161:20: warning: 'DOLOG_NOTE_NEW' defined but not used [-
+Wunused-variable]
+  161 | const static char* DOLOG_NOTE_NEW = "nn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:160:20: warning: 'DOLOG_XM_DEL' defined but not used [-Wu
+nused-variable]
+  160 | const static char* DOLOG_XM_DEL = "dx %1 %2";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:159:20: warning: 'DOLOG_XM_NEW' defined but not used [-Wu
+nused-variable]
+  159 | const static char* DOLOG_XM_NEW = "nx %1";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:136:20: warning: 'FOLDER_RESOURCES' defined but not used 
+[-Wunused-variable]
+  136 | const static char* FOLDER_RESOURCES = "resources";
+      |                    ^~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:135:20: warning: 'SM_FLAG' defined but not used [-Wunused
+-variable]
+  135 | const static char* SM_FLAG = "SHAREMEMORY_XXMOON";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:134:20: warning: 'HTTPS_PRE' defined but not used [-Wunus
+ed-variable]
+  134 | const static char* HTTPS_PRE = "https://";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:133:20: warning: 'HTTP_PRE' defined but not used [-Wunuse
+d-variable]
+  133 | const static char* HTTP_PRE = "http://";
+      |                    ^~~~~~~~
+../xxmoon/com/const.h:132:20: warning: 'CODE36' defined but not used [-Wunused-
+variable]
+  132 | const static char* CODE36 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      |                    ^~~~~~
+../xxmoon/com/const.h:131:20: warning: 'CODE_TABLE' defined but not used [-Wunu
+sed-variable]
+  131 | const static char* CODE_TABLE = "~r9y.2s=79#)aef^_kno%4h|u6?5wlz`({dc;v
+p<q3,0&x/!'7[-+mb@>gt*i}ja$";
+      |                    ^~~~~~~~~~
+../xxmoon/com/const.h:117:20: warning: 'LOG_LEVEL_ERROR' defined but not used [
+-Wunused-variable]
+  117 | const static char* LOG_LEVEL_ERROR = "error";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:116:20: warning: 'LOG_LEVEL_WARN' defined but not used [-
+Wunused-variable]
+  116 | const static char* LOG_LEVEL_WARN = "warn";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:115:20: warning: 'LOG_LEVEL_INFO' defined but not used [-
+Wunused-variable]
+  115 | const static char* LOG_LEVEL_INFO = "info";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:114:20: warning: 'LOG_LEVEL_DEBUG' defined but not used [
+-Wunused-variable]
+  114 | const static char* LOG_LEVEL_DEBUG = "debug";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:113:20: warning: 'LOG_LEVEL_TRACE' defined but not used [
+-Wunused-variable]
+  113 | const static char* LOG_LEVEL_TRACE = "trace";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:111:20: warning: 'NOTE_BJ_STYLE' defined but not used [-W
+unused-variable]
+  111 | const static char* NOTE_BJ_STYLE = " style='color:gray;text-align: righ
+t;font-style: italic; font-size: 14px;'";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:105:20: warning: 'ENV_K_SCRIPTS' defined but not used [-W
+unused-variable]
+  105 | const static char* ENV_K_SCRIPTS = "SCRIPTS";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:99:20: warning: 'ENV_K_LAST_EXCHANGE_VERSION' defined but
+ not used [-Wunused-variable]
+   99 | const static char* ENV_K_LAST_EXCHANGE_VERSION = "LAST_EXCHANGE_VERSION
+";
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:98:20: warning: 'ENV_K_LAST_IMP_TIME' defined but not use
+d [-Wunused-variable]
+   98 | const static char* ENV_K_LAST_IMP_TIME = "LAST_IMP_TIME";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:97:20: warning: 'ENV_K_LAST_IMP_PATH' defined but not use
+d [-Wunused-variable]
+   97 | const static char* ENV_K_LAST_IMP_PATH = "LAST_IMP_PATH";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:95:20: warning: 'VERSION' defined but not used [-Wunused-
+variable]
+   95 | const static char* VERSION = "v1.59.1";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:87:20: warning: 'sql_task_log_table' defined but not used
+ [-Wunused-variable]
+   87 | const static char* sql_task_log_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:81:20: warning: 'sql_env_table' defined but not used [-Wu
+nused-variable]
+   81 | const static char* sql_env_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:75:20: warning: 'sql_tag_table' defined but not used [-Wu
+nused-variable]
+   75 | const static char* sql_tag_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:57:20: warning: 'sql_xm_table' defined but not used [-Wun
+used-variable]
+   57 | const static char* sql_xm_table =
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:48:20: warning: 'sql_category_table' defined but not used
+ [-Wunused-variable]
+   48 | const static char* sql_category_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:46:20: warning: 'sql_note_script' defined but not used [-
+Wunused-variable]
+   46 | const static char* sql_note_script = "create unique index note_time_uin
+dex on note (time);";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:31:20: warning: 'sql_note_table' defined but not used [-W
+unused-variable]
+   31 | const static char* sql_note_table =
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:19:20: warning: 'sql_work_table' defined but not used [-W
+unused-variable]
+   19 | const static char* sql_work_table =
+      |                    ^~~~~~~~~~~~~~
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\tag.o ..\xxmoon\model\tag.cpp
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\tasklog.o ..\xxmoon\model\tasklog.cpp
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\work.o ..\xxmoon\model\work.cpp
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\xm.o ..\xxmoon\model\xm.cpp
+In file included from ../xxmoon/app.h:5,
+                 from ../xxmoon/com/global.h:17,
+                 from ..\xxmoon\model\xm.cpp:2:
+../xxmoon/com/const.h:173:20: warning: 'DOLOG_TaskLog_NEW' defined but not used
+ [-Wunused-variable]
+  173 | const static char* DOLOG_TaskLog_NEW = "nl %1";
+      |                    ^~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:172:20: warning: 'DOLOG_SQL' defined but not used [-Wunus
+ed-variable]
+  172 | const static char* DOLOG_SQL = "sql %1";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:171:20: warning: 'DOLOG_TAG_DEL' defined but not used [-W
+unused-variable]
+  171 | const static char* DOLOG_TAG_DEL = "dt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:170:20: warning: 'DOLOG_TAG_NEW' defined but not used [-W
+unused-variable]
+  170 | const static char* DOLOG_TAG_NEW = "nt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:169:20: warning: 'DOLOG_ENV_DEL' defined but not used [-W
+unused-variable]
+  169 | const static char* DOLOG_ENV_DEL = "de %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:168:20: warning: 'DOLOG_ENV_NEW' defined but not used [-W
+unused-variable]
+  168 | const static char* DOLOG_ENV_NEW = "ne %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:167:20: warning: 'DOLOG_WORK_DEL' defined but not used [-
+Wunused-variable]
+  167 | const static char* DOLOG_WORK_DEL = "dw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:166:20: warning: 'DOLOG_WORK_NEW' defined but not used [-
+Wunused-variable]
+  166 | const static char* DOLOG_WORK_NEW = "nw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:165:20: warning: 'DOLOG_CATEGORY_DEL' defined but not use
+d [-Wunused-variable]
+  165 | const static char* DOLOG_CATEGORY_DEL = "dc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:164:20: warning: 'DOLOG_CATEGORY_NEW' defined but not use
+d [-Wunused-variable]
+  164 | const static char* DOLOG_CATEGORY_NEW = "nc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:163:20: warning: 'DOLOG_NOTE_BY_WID_DEL' defined but not 
+used [-Wunused-variable]
+  163 | const static char* DOLOG_NOTE_BY_WID_DEL = "dnw %1";
+      |                    ^~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:162:20: warning: 'DOLOG_NOTE_DEL' defined but not used [-
+Wunused-variable]
+  162 | const static char* DOLOG_NOTE_DEL = "dn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:161:20: warning: 'DOLOG_NOTE_NEW' defined but not used [-
+Wunused-variable]
+  161 | const static char* DOLOG_NOTE_NEW = "nn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:160:20: warning: 'DOLOG_XM_DEL' defined but not used [-Wu
+nused-variable]
+  160 | const static char* DOLOG_XM_DEL = "dx %1 %2";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:159:20: warning: 'DOLOG_XM_NEW' defined but not used [-Wu
+nused-variable]
+  159 | const static char* DOLOG_XM_NEW = "nx %1";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:136:20: warning: 'FOLDER_RESOURCES' defined but not used 
+[-Wunused-variable]
+  136 | const static char* FOLDER_RESOURCES = "resources";
+      |                    ^~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:135:20: warning: 'SM_FLAG' defined but not used [-Wunused
+-variable]
+  135 | const static char* SM_FLAG = "SHAREMEMORY_XXMOON";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:134:20: warning: 'HTTPS_PRE' defined but not used [-Wunus
+ed-variable]
+  134 | const static char* HTTPS_PRE = "https://";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:133:20: warning: 'HTTP_PRE' defined but not used [-Wunuse
+d-variable]
+  133 | const static char* HTTP_PRE = "http://";
+      |                    ^~~~~~~~
+../xxmoon/com/const.h:132:20: warning: 'CODE36' defined but not used [-Wunused-
+variable]
+  132 | const static char* CODE36 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      |                    ^~~~~~
+../xxmoon/com/const.h:131:20: warning: 'CODE_TABLE' defined but not used [-Wunu
+sed-variable]
+  131 | const static char* CODE_TABLE = "~r9y.2s=79#)aef^_kno%4h|u6?5wlz`({dc;v
+p<q3,0&x/!'7[-+mb@>gt*i}ja$";
+      |                    ^~~~~~~~~~
+../xxmoon/com/const.h:117:20: warning: 'LOG_LEVEL_ERROR' defined but not used [
+-Wunused-variable]
+  117 | const static char* LOG_LEVEL_ERROR = "error";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:116:20: warning: 'LOG_LEVEL_WARN' defined but not used [-
+Wunused-variable]
+  116 | const static char* LOG_LEVEL_WARN = "warn";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:115:20: warning: 'LOG_LEVEL_INFO' defined but not used [-
+Wunused-variable]
+  115 | const static char* LOG_LEVEL_INFO = "info";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:114:20: warning: 'LOG_LEVEL_DEBUG' defined but not used [
+-Wunused-variable]
+  114 | const static char* LOG_LEVEL_DEBUG = "debug";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:113:20: warning: 'LOG_LEVEL_TRACE' defined but not used [
+-Wunused-variable]
+  113 | const static char* LOG_LEVEL_TRACE = "trace";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:111:20: warning: 'NOTE_BJ_STYLE' defined but not used [-W
+unused-variable]
+  111 | const static char* NOTE_BJ_STYLE = " style='color:gray;text-align: righ
+t;font-style: italic; font-size: 14px;'";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:105:20: warning: 'ENV_K_SCRIPTS' defined but not used [-W
+unused-variable]
+  105 | const static char* ENV_K_SCRIPTS = "SCRIPTS";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:99:20: warning: 'ENV_K_LAST_EXCHANGE_VERSION' defined but
+ not used [-Wunused-variable]
+   99 | const static char* ENV_K_LAST_EXCHANGE_VERSION = "LAST_EXCHANGE_VERSION
+";
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:98:20: warning: 'ENV_K_LAST_IMP_TIME' defined but not use
+d [-Wunused-variable]
+   98 | const static char* ENV_K_LAST_IMP_TIME = "LAST_IMP_TIME";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:97:20: warning: 'ENV_K_LAST_IMP_PATH' defined but not use
+d [-Wunused-variable]
+   97 | const static char* ENV_K_LAST_IMP_PATH = "LAST_IMP_PATH";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:95:20: warning: 'VERSION' defined but not used [-Wunused-
+variable]
+   95 | const static char* VERSION = "v1.59.1";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:87:20: warning: 'sql_task_log_table' defined but not used
+ [-Wunused-variable]
+   87 | const static char* sql_task_log_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:81:20: warning: 'sql_env_table' defined but not used [-Wu
+nused-variable]
+   81 | const static char* sql_env_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:75:20: warning: 'sql_tag_table' defined but not used [-Wu
+nused-variable]
+   75 | const static char* sql_tag_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:57:20: warning: 'sql_xm_table' defined but not used [-Wun
+used-variable]
+   57 | const static char* sql_xm_table =
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:48:20: warning: 'sql_category_table' defined but not used
+ [-Wunused-variable]
+   48 | const static char* sql_category_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:46:20: warning: 'sql_note_script' defined but not used [-
+Wunused-variable]
+   46 | const static char* sql_note_script = "create unique index note_time_uin
+dex on note (time);";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:31:20: warning: 'sql_note_table' defined but not used [-W
+unused-variable]
+   31 | const static char* sql_note_table =
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:19:20: warning: 'sql_work_table' defined but not used [-W
+unused-variable]
+   19 | const static char* sql_work_table =
+      |                    ^~~~~~~~~~~~~~
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\qhotkey.o ..\..\qt\os\QHotkey\QHotkey\qhotkey.cpp
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\qhotkey_win.o ..\..\qt\os\QHotkey\QHotkey\qhotkey_win.cpp
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\moc_app.o release\moc_app.cpp
+In file included from E:/code/trae/xxmoon/app.h:5,
+                 from release\moc_app.cpp:9:
+E:/code/trae/xxmoon/com/const.h:173:20: warning: 'DOLOG_TaskLog_NEW' defined bu
+t not used [-Wunused-variable]
+  173 | const static char* DOLOG_TaskLog_NEW = "nl %1";
+      |                    ^~~~~~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:172:20: warning: 'DOLOG_SQL' defined but not us
+ed [-Wunused-variable]
+  172 | const static char* DOLOG_SQL = "sql %1";
+      |                    ^~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:171:20: warning: 'DOLOG_TAG_DEL' defined but no
+t used [-Wunused-variable]
+  171 | const static char* DOLOG_TAG_DEL = "dt %1";
+      |                    ^~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:170:20: warning: 'DOLOG_TAG_NEW' defined but no
+t used [-Wunused-variable]
+  170 | const static char* DOLOG_TAG_NEW = "nt %1";
+      |                    ^~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:169:20: warning: 'DOLOG_ENV_DEL' defined but no
+t used [-Wunused-variable]
+  169 | const static char* DOLOG_ENV_DEL = "de %1";
+      |                    ^~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:168:20: warning: 'DOLOG_ENV_NEW' defined but no
+t used [-Wunused-variable]
+  168 | const static char* DOLOG_ENV_NEW = "ne %1";
+      |                    ^~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:167:20: warning: 'DOLOG_WORK_DEL' defined but n
+ot used [-Wunused-variable]
+  167 | const static char* DOLOG_WORK_DEL = "dw %1";
+      |                    ^~~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:166:20: warning: 'DOLOG_WORK_NEW' defined but n
+ot used [-Wunused-variable]
+  166 | const static char* DOLOG_WORK_NEW = "nw %1";
+      |                    ^~~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:165:20: warning: 'DOLOG_CATEGORY_DEL' defined b
+ut not used [-Wunused-variable]
+  165 | const static char* DOLOG_CATEGORY_DEL = "dc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:164:20: warning: 'DOLOG_CATEGORY_NEW' defined b
+ut not used [-Wunused-variable]
+  164 | const static char* DOLOG_CATEGORY_NEW = "nc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:163:20: warning: 'DOLOG_NOTE_BY_WID_DEL' define
+d but not used [-Wunused-variable]
+  163 | const static char* DOLOG_NOTE_BY_WID_DEL = "dnw %1";
+      |                    ^~~~~~~~~~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:162:20: warning: 'DOLOG_NOTE_DEL' defined but n
+ot used [-Wunused-variable]
+  162 | const static char* DOLOG_NOTE_DEL = "dn %1";
+      |                    ^~~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:161:20: warning: 'DOLOG_NOTE_NEW' defined but n
+ot used [-Wunused-variable]
+  161 | const static char* DOLOG_NOTE_NEW = "nn %1";
+      |                    ^~~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:160:20: warning: 'DOLOG_XM_DEL' defined but not
+ used [-Wunused-variable]
+  160 | const static char* DOLOG_XM_DEL = "dx %1 %2";
+      |                    ^~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:159:20: warning: 'DOLOG_XM_NEW' defined but not
+ used [-Wunused-variable]
+  159 | const static char* DOLOG_XM_NEW = "nx %1";
+      |                    ^~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:136:20: warning: 'FOLDER_RESOURCES' defined but
+ not used [-Wunused-variable]
+  136 | const static char* FOLDER_RESOURCES = "resources";
+      |                    ^~~~~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:135:20: warning: 'SM_FLAG' defined but not used
+ [-Wunused-variable]
+  135 | const static char* SM_FLAG = "SHAREMEMORY_XXMOON";
+      |                    ^~~~~~~
+E:/code/trae/xxmoon/com/const.h:134:20: warning: 'HTTPS_PRE' defined but not us
+ed [-Wunused-variable]
+  134 | const static char* HTTPS_PRE = "https://";
+      |                    ^~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:133:20: warning: 'HTTP_PRE' defined but not use
+d [-Wunused-variable]
+  133 | const static char* HTTP_PRE = "http://";
+      |                    ^~~~~~~~
+E:/code/trae/xxmoon/com/const.h:132:20: warning: 'CODE36' defined but not used 
+[-Wunused-variable]
+  132 | const static char* CODE36 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      |                    ^~~~~~
+E:/code/trae/xxmoon/com/const.h:131:20: warning: 'CODE_TABLE' defined but not u
+sed [-Wunused-variable]
+  131 | const static char* CODE_TABLE = "~r9y.2s=79#)aef^_kno%4h|u6?5wlz`({dc;v
+p<q3,0&x/!'7[-+mb@>gt*i}ja$";
+      |                    ^~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:117:20: warning: 'LOG_LEVEL_ERROR' defined but 
+not used [-Wunused-variable]
+  117 | const static char* LOG_LEVEL_ERROR = "error";
+      |                    ^~~~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:116:20: warning: 'LOG_LEVEL_WARN' defined but n
+ot used [-Wunused-variable]
+  116 | const static char* LOG_LEVEL_WARN = "warn";
+      |                    ^~~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:115:20: warning: 'LOG_LEVEL_INFO' defined but n
+ot used [-Wunused-variable]
+  115 | const static char* LOG_LEVEL_INFO = "info";
+      |                    ^~~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:114:20: warning: 'LOG_LEVEL_DEBUG' defined but 
+not used [-Wunused-variable]
+  114 | const static char* LOG_LEVEL_DEBUG = "debug";
+      |                    ^~~~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:113:20: warning: 'LOG_LEVEL_TRACE' defined but 
+not used [-Wunused-variable]
+  113 | const static char* LOG_LEVEL_TRACE = "trace";
+      |                    ^~~~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:111:20: warning: 'NOTE_BJ_STYLE' defined but no
+t used [-Wunused-variable]
+  111 | const static char* NOTE_BJ_STYLE = " style='color:gray;text-align: righ
+t;font-style: italic; font-size: 14px;'";
+      |                    ^~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:105:20: warning: 'ENV_K_SCRIPTS' defined but no
+t used [-Wunused-variable]
+  105 | const static char* ENV_K_SCRIPTS = "SCRIPTS";
+      |                    ^~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:99:20: warning: 'ENV_K_LAST_EXCHANGE_VERSION' d
+efined but not used [-Wunused-variable]
+   99 | const static char* ENV_K_LAST_EXCHANGE_VERSION = "LAST_EXCHANGE_VERSION
+";
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:98:20: warning: 'ENV_K_LAST_IMP_TIME' defined b
+ut not used [-Wunused-variable]
+   98 | const static char* ENV_K_LAST_IMP_TIME = "LAST_IMP_TIME";
+      |                    ^~~~~~~~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:97:20: warning: 'ENV_K_LAST_IMP_PATH' defined b
+ut not used [-Wunused-variable]
+   97 | const static char* ENV_K_LAST_IMP_PATH = "LAST_IMP_PATH";
+      |                    ^~~~~~~~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:95:20: warning: 'VERSION' defined but not used 
+[-Wunused-variable]
+   95 | const static char* VERSION = "v1.59.1";
+      |                    ^~~~~~~
+E:/code/trae/xxmoon/com/const.h:87:20: warning: 'sql_task_log_table' defined bu
+t not used [-Wunused-variable]
+   87 | const static char* sql_task_log_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:81:20: warning: 'sql_env_table' defined but not
+ used [-Wunused-variable]
+   81 | const static char* sql_env_table =
+      |                    ^~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:75:20: warning: 'sql_tag_table' defined but not
+ used [-Wunused-variable]
+   75 | const static char* sql_tag_table =
+      |                    ^~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:57:20: warning: 'sql_xm_table' defined but not 
+used [-Wunused-variable]
+   57 | const static char* sql_xm_table =
+      |                    ^~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:48:20: warning: 'sql_category_table' defined bu
+t not used [-Wunused-variable]
+   48 | const static char* sql_category_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:46:20: warning: 'sql_note_script' defined but n
+ot used [-Wunused-variable]
+   46 | const static char* sql_note_script = "create unique index note_time_uin
+dex on note (time);";
+      |                    ^~~~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:31:20: warning: 'sql_note_table' defined but no
+t used [-Wunused-variable]
+   31 | const static char* sql_note_table =
+      |                    ^~~~~~~~~~~~~~
+E:/code/trae/xxmoon/com/const.h:19:20: warning: 'sql_work_table' defined but no
+t used [-Wunused-variable]
+   19 | const static char* sql_work_table =
+      |                    ^~~~~~~~~~~~~~
+C:\Qt\6.9.0\mingw_64\bin\moc.exe -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" --include E:/code/trae/xxmoontest/release/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IE:/code/trae/xxmoontest -IE:/code/trae/xxmoon -IE:/code/qt/os/QHotkey/QHotkey -IE:/code/trae/xxmoon/libs/win/include -IE:/code/trae/xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\xxmoon\l.h -o release\moc_l.cpp
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\moc_l.o release\moc_l.cpp
+C:\Qt\6.9.0\mingw_64\bin\moc.exe -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" --include E:/code/trae/xxmoontest/release/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IE:/code/trae/xxmoontest -IE:/code/trae/xxmoon -IE:/code/qt/os/QHotkey/QHotkey -IE:/code/trae/xxmoon/libs/win/include -IE:/code/trae/xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\xxmoon\menumanager.h -o release\moc_menumanager.cpp
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\moc_menumanager.o release\moc_menumanager.cpp
+C:\Qt\6.9.0\mingw_64\bin\moc.exe -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" --include E:/code/trae/xxmoontest/release/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IE:/code/trae/xxmoontest -IE:/code/trae/xxmoon -IE:/code/qt/os/QHotkey/QHotkey -IE:/code/trae/xxmoon/libs/win/include -IE:/code/trae/xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\xxmoon\timer.h -o release\moc_timer.cpp
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\moc_timer.o release\moc_timer.cpp
+C:\Qt\6.9.0\mingw_64\bin\moc.exe -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" --include E:/code/trae/xxmoontest/release/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IE:/code/trae/xxmoontest -IE:/code/trae/xxmoon -IE:/code/qt/os/QHotkey/QHotkey -IE:/code/trae/xxmoon/libs/win/include -IE:/code/trae/xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\xxmoon\action\bookaction.h -o release\moc_bookaction.cpp
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\moc_bookaction.o release\moc_bookaction.cpp
+C:\Qt\6.9.0\mingw_64\bin\moc.exe -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" --include E:/code/trae/xxmoontest/release/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IE:/code/trae/xxmoontest -IE:/code/trae/xxmoon -IE:/code/qt/os/QHotkey/QHotkey -IE:/code/trae/xxmoon/libs/win/include -IE:/code/trae/xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\xxmoon\action\xmaction.h -o release\moc_xmaction.cpp
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\moc_xmaction.o release\moc_xmaction.cpp
+C:\Qt\6.9.0\mingw_64\bin\moc.exe -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" --include E:/code/trae/xxmoontest/release/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IE:/code/trae/xxmoontest -IE:/code/trae/xxmoon -IE:/code/qt/os/QHotkey/QHotkey -IE:/code/trae/xxmoon/libs/win/include -IE:/code/trae/xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\xxmoon\com\http.h -o release\moc_http.cpp
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\moc_http.o release\moc_http.cpp
+In file included from E:/code/trae/xxmoon/com/http.h:6,
+                 from release\moc_http.cpp:9:
+../xxmoon/com/const.h:173:20: warning: 'DOLOG_TaskLog_NEW' defined but not used
+ [-Wunused-variable]
+  173 | const static char* DOLOG_TaskLog_NEW = "nl %1";
+      |                    ^~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:172:20: warning: 'DOLOG_SQL' defined but not used [-Wunus
+ed-variable]
+  172 | const static char* DOLOG_SQL = "sql %1";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:171:20: warning: 'DOLOG_TAG_DEL' defined but not used [-W
+unused-variable]
+  171 | const static char* DOLOG_TAG_DEL = "dt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:170:20: warning: 'DOLOG_TAG_NEW' defined but not used [-W
+unused-variable]
+  170 | const static char* DOLOG_TAG_NEW = "nt %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:169:20: warning: 'DOLOG_ENV_DEL' defined but not used [-W
+unused-variable]
+  169 | const static char* DOLOG_ENV_DEL = "de %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:168:20: warning: 'DOLOG_ENV_NEW' defined but not used [-W
+unused-variable]
+  168 | const static char* DOLOG_ENV_NEW = "ne %1";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:167:20: warning: 'DOLOG_WORK_DEL' defined but not used [-
+Wunused-variable]
+  167 | const static char* DOLOG_WORK_DEL = "dw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:166:20: warning: 'DOLOG_WORK_NEW' defined but not used [-
+Wunused-variable]
+  166 | const static char* DOLOG_WORK_NEW = "nw %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:165:20: warning: 'DOLOG_CATEGORY_DEL' defined but not use
+d [-Wunused-variable]
+  165 | const static char* DOLOG_CATEGORY_DEL = "dc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:164:20: warning: 'DOLOG_CATEGORY_NEW' defined but not use
+d [-Wunused-variable]
+  164 | const static char* DOLOG_CATEGORY_NEW = "nc %1";
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:163:20: warning: 'DOLOG_NOTE_BY_WID_DEL' defined but not 
+used [-Wunused-variable]
+  163 | const static char* DOLOG_NOTE_BY_WID_DEL = "dnw %1";
+      |                    ^~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:162:20: warning: 'DOLOG_NOTE_DEL' defined but not used [-
+Wunused-variable]
+  162 | const static char* DOLOG_NOTE_DEL = "dn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:161:20: warning: 'DOLOG_NOTE_NEW' defined but not used [-
+Wunused-variable]
+  161 | const static char* DOLOG_NOTE_NEW = "nn %1";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:160:20: warning: 'DOLOG_XM_DEL' defined but not used [-Wu
+nused-variable]
+  160 | const static char* DOLOG_XM_DEL = "dx %1 %2";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:159:20: warning: 'DOLOG_XM_NEW' defined but not used [-Wu
+nused-variable]
+  159 | const static char* DOLOG_XM_NEW = "nx %1";
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:136:20: warning: 'FOLDER_RESOURCES' defined but not used 
+[-Wunused-variable]
+  136 | const static char* FOLDER_RESOURCES = "resources";
+      |                    ^~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:135:20: warning: 'SM_FLAG' defined but not used [-Wunused
+-variable]
+  135 | const static char* SM_FLAG = "SHAREMEMORY_XXMOON";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:134:20: warning: 'HTTPS_PRE' defined but not used [-Wunus
+ed-variable]
+  134 | const static char* HTTPS_PRE = "https://";
+      |                    ^~~~~~~~~
+../xxmoon/com/const.h:133:20: warning: 'HTTP_PRE' defined but not used [-Wunuse
+d-variable]
+  133 | const static char* HTTP_PRE = "http://";
+      |                    ^~~~~~~~
+../xxmoon/com/const.h:132:20: warning: 'CODE36' defined but not used [-Wunused-
+variable]
+  132 | const static char* CODE36 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      |                    ^~~~~~
+../xxmoon/com/const.h:131:20: warning: 'CODE_TABLE' defined but not used [-Wunu
+sed-variable]
+  131 | const static char* CODE_TABLE = "~r9y.2s=79#)aef^_kno%4h|u6?5wlz`({dc;v
+p<q3,0&x/!'7[-+mb@>gt*i}ja$";
+      |                    ^~~~~~~~~~
+../xxmoon/com/const.h:117:20: warning: 'LOG_LEVEL_ERROR' defined but not used [
+-Wunused-variable]
+  117 | const static char* LOG_LEVEL_ERROR = "error";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:116:20: warning: 'LOG_LEVEL_WARN' defined but not used [-
+Wunused-variable]
+  116 | const static char* LOG_LEVEL_WARN = "warn";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:115:20: warning: 'LOG_LEVEL_INFO' defined but not used [-
+Wunused-variable]
+  115 | const static char* LOG_LEVEL_INFO = "info";
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:114:20: warning: 'LOG_LEVEL_DEBUG' defined but not used [
+-Wunused-variable]
+  114 | const static char* LOG_LEVEL_DEBUG = "debug";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:113:20: warning: 'LOG_LEVEL_TRACE' defined but not used [
+-Wunused-variable]
+  113 | const static char* LOG_LEVEL_TRACE = "trace";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:111:20: warning: 'NOTE_BJ_STYLE' defined but not used [-W
+unused-variable]
+  111 | const static char* NOTE_BJ_STYLE = " style='color:gray;text-align: righ
+t;font-style: italic; font-size: 14px;'";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:108:20: warning: 'Tag2' defined but not used [-Wunused-va
+riable]
+  108 | const static char* Tag2 = "</font>";
+      |                    ^~~~
+../xxmoon/com/const.h:107:20: warning: 'Tag1' defined but not used [-Wunused-va
+riable]
+  107 | const static char* Tag1 = "<font color='red'>";
+      |                    ^~~~
+../xxmoon/com/const.h:105:20: warning: 'ENV_K_SCRIPTS' defined but not used [-W
+unused-variable]
+  105 | const static char* ENV_K_SCRIPTS = "SCRIPTS";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:104:20: warning: 'ENV_K_LAST_BOOK_LEFT_WIDTH' defined but
+ not used [-Wunused-variable]
+  104 | const static char* ENV_K_LAST_BOOK_LEFT_WIDTH = "LAST_BOOK_LEFT_WIDTH";
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:103:20: warning: 'ENV_K_LAST_CATEGORY_LEFT_WIDTH' defined
+ but not used [-Wunused-variable]
+  103 | const static char* ENV_K_LAST_CATEGORY_LEFT_WIDTH = "LAST_CATEGORY_LEFT
+_WIDTH";
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:102:20: warning: 'ENV_K_LAST_WH' defined but not used [-W
+unused-variable]
+  102 | const static char* ENV_K_LAST_WH = "LAST_WH";
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:101:20: warning: 'ENV_K_LAST_VIEW_TYPE' defined but not u
+sed [-Wunused-variable]
+  101 | const static char* ENV_K_LAST_VIEW_TYPE = "LAST_VIEW_TYPE";
+      |                    ^~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:100:20: warning: 'ENV_K_LAST_SORT' defined but not used [
+-Wunused-variable]
+  100 | const static char* ENV_K_LAST_SORT = "LAST_SORT";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:99:20: warning: 'ENV_K_LAST_EXCHANGE_VERSION' defined but
+ not used [-Wunused-variable]
+   99 | const static char* ENV_K_LAST_EXCHANGE_VERSION = "LAST_EXCHANGE_VERSION
+";
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:98:20: warning: 'ENV_K_LAST_IMP_TIME' defined but not use
+d [-Wunused-variable]
+   98 | const static char* ENV_K_LAST_IMP_TIME = "LAST_IMP_TIME";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:97:20: warning: 'ENV_K_LAST_IMP_PATH' defined but not use
+d [-Wunused-variable]
+   97 | const static char* ENV_K_LAST_IMP_PATH = "LAST_IMP_PATH";
+      |                    ^~~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:95:20: warning: 'VERSION' defined but not used [-Wunused-
+variable]
+   95 | const static char* VERSION = "v1.59.1";
+      |                    ^~~~~~~
+../xxmoon/com/const.h:87:20: warning: 'sql_task_log_table' defined but not used
+ [-Wunused-variable]
+   87 | const static char* sql_task_log_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:81:20: warning: 'sql_env_table' defined but not used [-Wu
+nused-variable]
+   81 | const static char* sql_env_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:75:20: warning: 'sql_tag_table' defined but not used [-Wu
+nused-variable]
+   75 | const static char* sql_tag_table =
+      |                    ^~~~~~~~~~~~~
+../xxmoon/com/const.h:57:20: warning: 'sql_xm_table' defined but not used [-Wun
+used-variable]
+   57 | const static char* sql_xm_table =
+      |                    ^~~~~~~~~~~~
+../xxmoon/com/const.h:48:20: warning: 'sql_category_table' defined but not used
+ [-Wunused-variable]
+   48 | const static char* sql_category_table =
+      |                    ^~~~~~~~~~~~~~~~~~
+../xxmoon/com/const.h:46:20: warning: 'sql_note_script' defined but not used [-
+Wunused-variable]
+   46 | const static char* sql_note_script = "create unique index note_time_uin
+dex on note (time);";
+      |                    ^~~~~~~~~~~~~~~
+../xxmoon/com/const.h:31:20: warning: 'sql_note_table' defined but not used [-W
+unused-variable]
+   31 | const static char* sql_note_table =
+      |                    ^~~~~~~~~~~~~~
+../xxmoon/com/const.h:19:20: warning: 'sql_work_table' defined but not used [-W
+unused-variable]
+   19 | const static char* sql_work_table =
+      |                    ^~~~~~~~~~~~~~
+C:\Qt\6.9.0\mingw_64\bin\moc.exe -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" --include E:/code/trae/xxmoontest/release/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IE:/code/trae/xxmoontest -IE:/code/trae/xxmoon -IE:/code/qt/os/QHotkey/QHotkey -IE:/code/trae/xxmoon/libs/win/include -IE:/code/trae/xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\xxmoon\com\qaesencryption.h -o release\moc_qaesencryption.cpp
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\moc_qaesencryption.o release\moc_qaesencryption.cpp
+C:\Qt\6.9.0\mingw_64\bin\moc.exe -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" --include E:/code/trae/xxmoontest/release/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IE:/code/trae/xxmoontest -IE:/code/trae/xxmoon -IE:/code/qt/os/QHotkey/QHotkey -IE:/code/trae/xxmoon/libs/win/include -IE:/code/trae/xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\xxmoon\com\runmain.h -o release\moc_runmain.cpp
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\moc_runmain.o release\moc_runmain.cpp
+C:\Qt\6.9.0\mingw_64\bin\moc.exe -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" --include E:/code/trae/xxmoontest/release/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IE:/code/trae/xxmoontest -IE:/code/trae/xxmoon -IE:/code/qt/os/QHotkey/QHotkey -IE:/code/trae/xxmoon/libs/win/include -IE:/code/trae/xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\xxmoon\com\script.h -o release\moc_script.cpp
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\moc_script.o release\moc_script.cpp
+C:\Qt\6.9.0\mingw_64\bin\moc.exe -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" --include E:/code/trae/xxmoontest/release/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IE:/code/trae/xxmoontest -IE:/code/trae/xxmoon -IE:/code/qt/os/QHotkey/QHotkey -IE:/code/trae/xxmoon/libs/win/include -IE:/code/trae/xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\xxmoon\com\sync.h -o release\moc_sync.cpp
+Warning: Failed to resolve include "E:/code/trae/xxmoontest/release/moc_predefs
+.h" for moc file ..\xxmoon\com\sync.h
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\moc_sync.o release\moc_sync.cpp
+C:\Qt\6.9.0\mingw_64\bin\moc.exe -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" --include E:/code/trae/xxmoontest/release/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IE:/code/trae/xxmoontest -IE:/code/trae/xxmoon -IE:/code/qt/os/QHotkey/QHotkey -IE:/code/trae/xxmoon/libs/win/include -IE:/code/trae/xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\xxmoon\model\cfg.h -o release\moc_cfg.cpp
+Warning: Failed to resolve include "E:/code/trae/xxmoontest/release/moc_predefs
+.h" for moc file ..\xxmoon\model\cfg.h
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\moc_cfg.o release\moc_cfg.cpp
+C:\Qt\6.9.0\mingw_64\bin\moc.exe -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" --include E:/code/trae/xxmoontest/release/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IE:/code/trae/xxmoontest -IE:/code/trae/xxmoon -IE:/code/qt/os/QHotkey/QHotkey -IE:/code/trae/xxmoon/libs/win/include -IE:/code/trae/xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\qt\os\QHotkey\QHotkey\qhotkey.h -o release\moc_qhotkey.cpp
+Warning: Failed to resolve include "E:/code/trae/xxmoontest/release/moc_predefs
+.h" for moc file ..\..\qt\os\QHotkey\QHotkey\qhotkey.h
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\moc_qhotkey.o release\moc_qhotkey.cpp
+C:\Qt\6.9.0\mingw_64\bin\moc.exe -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" --include E:/code/trae/xxmoontest/release/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IE:/code/trae/xxmoontest -IE:/code/trae/xxmoon -IE:/code/qt/os/QHotkey/QHotkey -IE:/code/trae/xxmoon/libs/win/include -IE:/code/trae/xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\qt\os\QHotkey\QHotkey\qhotkey_p.h -o release\moc_qhotkey_p.cpp
+Warning: Failed to resolve include "E:/code/trae/xxmoontest/release/moc_predefs
+.h" for moc file ..\..\qt\os\QHotkey\QHotkey\qhotkey_p.h
+g++ -c -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -D_WINSOCKAPI_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_TESTLIB_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR="\"E:/code/trae/xxmoontest\"" -I. -I../xxmoon -I../../qt/os/QHotkey/QHotkey -I../xxmoon/libs/win/include -I../xxmoon/libs/win -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtQuickControls2 -IC:/Qt/6.9.0/mingw_64/include/QtQuick -IC:/Qt/6.9.0/mingw_64/include/QtOpenGL -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtTest -IC:/Qt/6.9.0/mingw_64/include/QtQmlMeta -IC:/Qt/6.9.0/mingw_64/include/QtQmlModels -IC:/Qt/6.9.0/mingw_64/include/QtQmlWorkerScript -IC:/Qt/6.9.0/mingw_64/include/QtQml -IC:/Qt/6.9.0/mingw_64/include/QtQmlIntegration -IC:/Qt/6.9.0/mingw_64/include/QtNetwork -IC:/Qt/6.9.0/mingw_64/include/QtSql -IC:/Qt/6.9.0/mingw_64/include/QtCore -Irelease -I/include -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++  -o release\moc_qhotkey_p.o release\moc_qhotkey_p.cpp
+g++ -Wl,-s -Wl,-subsystem,console -mthreads -o release\xxmoonTest.exe @release\object_script.xxmoonTest.Release -luser32 -lWs2_32 -LE:\code\trae\xxmoon\libs\win -lcrypto -lssl -LE:\code\trae\xxmoon\libs\win -lxxmoon C:\Qt\6.9.0\mingw_64\lib\libQt6Widgets.a C:\Qt\6.9.0\mingw_64\lib\libQt6QuickControls2.a C:\Qt\6.9.0\mingw_64\lib\libQt6Quick.a C:\Qt\6.9.0\mingw_64\lib\libQt6OpenGL.a C:\Qt\6.9.0\mingw_64\lib\libQt6Gui.a C:\Qt\6.9.0\mingw_64\lib\libQt6Test.a C:\Qt\6.9.0\mingw_64\lib\libQt6QmlMeta.a C:\Qt\6.9.0\mingw_64\lib\libQt6QmlModels.a C:\Qt\6.9.0\mingw_64\lib\libQt6QmlWorkerScript.a C:\Qt\6.9.0\mingw_64\lib\libQt6Qml.a C:\Qt\6.9.0\mingw_64\lib\libQt6Network.a C:\Qt\6.9.0\mingw_64\lib\libQt6Sql.a C:\Qt\6.9.0\mingw_64\lib\libQt6Core.a release\xxmoonTest_resource_res.o   
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/tst_xxmoontest.o: No such fil
+e or directory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/app.o: No such file or direct
+ory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/hserver.o: No such file or di
+rectory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/l.o: No such file or director
+y
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/menumanager.o: No such file o
+r directory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/qrc_qml.o: No such file or di
+rectory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/test.o: No such file or direc
+tory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/timer.o: No such file or dire
+ctory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/bookaction.o: No such file or
+ directory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/xmaction.o: No such file or d
+irectory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/async.o: No such file or dire
+ctory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/docparser.o: No such file or 
+directory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/filequeue.o: No such file or 
+directory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/future.o: No such file or dir
+ectory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/global.o: No such file or dir
+ectory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/http.o: No such file or direc
+tory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/log.o: No such file or direct
+ory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/mypinyin.o: No such file or d
+irectory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/qaesencryption.o: No such fil
+e or directory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/runmain.o: No such file or di
+rectory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/script.o: No such file or dir
+ectory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/sm.o: No such file or directo
+ry
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/sqlite_manager.o: No such fil
+e or directory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/sslhelper.o: No such file or 
+directory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/sync.o: No such file or direc
+tory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/trans.o: No such file or dire
+ctory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/util.o: No such file or direc
+tory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/xm_format.o: No such file or 
+directory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/basedao.o: No such file or di
+rectory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/categorydao.o: No such file o
+r directory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/envdao.o: No such file or dir
+ectory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/notedao.o: No such file or di
+rectory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/tagdao.o: No such file or dir
+ectory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/tasklogdao.o: No such file or
+ directory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/workdao.o: No such file or di
+rectory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/xmdao.o: No such file or dire
+ctory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/category.o: No such file or d
+irectory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/cfg.o: No such file or direct
+ory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/note.o: No such file or direc
+tory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/tag.o: No such file or direct
+ory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/tasklog.o: No such file or di
+rectory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/work.o: No such file or direc
+tory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/xm.o: No such file or directo
+ry
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/qhotkey.o: No such file or di
+rectory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/qhotkey_win.o: No such file o
+r directory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/moc_app.o: No such file or di
+rectory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/moc_l.o: No such file or dire
+ctory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/moc_menumanager.o: No such fi
+le or directory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/moc_timer.o: No such file or 
+directory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/moc_bookaction.o: No such fil
+e or directory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/moc_xmaction.o: No such file 
+or directory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/moc_http.o: No such file or d
+irectory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/moc_qaesencryption.o: No such
+ file or directory
+C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x
+86_64-w64-mingw32/bin/ld.exe: cannot find release/moc_runmain.o: No such file o
+r directory
+collect2.exe: error: ld returned 1 exit status
+mingw32-make[1]: *** [Makefile.Release:379: release/xxmoonTest.exe] Error 1
+mingw32-make[1]: Leaving directory 'E:/code/trae/xxmoontest'
+mingw32-make: *** [Makefile:45: release] Error 2

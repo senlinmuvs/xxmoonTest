@@ -1,10 +1,40 @@
-Debug
-Release
-.xcode
-*.pro.*
-*.TMP
-.idea
-.DS_Store
-xxmoon.xcodeproj/*
+# 构建输出
+[Dd]ebug/
+[Rr]elease/
+build/
+object_script.txt
+*.o
+*.exe
+*.app
+
+# Qt / IDE 生成文件
 .qmake.stash
-build
+Makefile
+Makefile.Debug
+Makefile.Release
+*.pro.user*
+*.moc
+xxmoonTest_resource.rc
+
+# IDE / 编辑器
+.idea/
+.xcode
+xxmoon.xcodeproj/
+.qtc_clangd/
+.vscode/
+
+# 编译缓存 / 日志
+*.log
+*.TMP
+
+# 构建辅助脚本
+link.bat
+target_wrapper.bat
+target_wrapper.sh
+
+# 临时 / 无关源码
+test.cpp
+
+# 系统
+.DS_Store
+Thumbs.db

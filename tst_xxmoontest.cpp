@@ -55,6 +55,7 @@ private slots:
     void testParser9();
     void testParser10();
     void testParser11();
+    void testParser12();
 };
 
 xxmoonTest::xxmoonTest(){
@@ -606,6 +607,13 @@ void xxmoonTest::testParser11() {
     QString expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>c\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
     QCOMPARE(qmls[0], expe0);
     QCOMPARE(qmls[1], expe1);
+}
+void xxmoonTest::testParser12() {
+    QString s = "# a\n## b\n### c";
+    QStringList qmls = doc_parser->parseQML(s, 600);
+    Q_ASSERT(qmls.size() == 1);
+    QString expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><h1>a</h1><h2>b</h2><h3>c</h3>\";width:parent?parent.width:0}";
+    QCOMPARE(qmls[0], expe0);
 }
 void xxmoonTest::test18() {
     QString k = "#hello!(x)$";

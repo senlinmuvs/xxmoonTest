@@ -56,6 +56,7 @@ private slots:
     void testParser10();
     void testParser11();
     void testParser12();
+    void testParser13();
 };
 
 xxmoonTest::xxmoonTest(){
@@ -308,13 +309,13 @@ void xxmoonTest::testParser1() {
     Q_ASSERT(qmls.size() == 2);
     QString expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><h1>a</h1>\";width:parent?parent.width:0}";
     QCOMPARE(qmls[0], expe0);
-    QString expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>b\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    QString expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><pre style='white-space:pre-wrap;word-break:break-all;'>b</pre>\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
     QCOMPARE(qmls[1], expe1);
 
     s = "```\na\n```\n# c\n\n\n# b";
     qmls = doc_parser->parseQML(s, 600);
     Q_ASSERT(qmls.size() == 2);
-    expe0 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    expe0 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><pre style='white-space:pre-wrap;word-break:break-all;'>a</pre>\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
     QCOMPARE(qmls[0], expe0);
     expe1 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><h1>c</h1><p style='line-height:20px'>&nbsp;</p><h1>b</h1>\";width:parent?parent.width:0}";
     QCOMPARE(qmls[1], expe1);
@@ -330,13 +331,13 @@ void xxmoonTest::testParser1() {
     Q_ASSERT(qmls.size() == 2);
     expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><h1>a</h1><p style='line-height:20px'>&nbsp;</p>\";width:parent?parent.width:0}";
     QCOMPARE(qmls[0], expe0);
-    expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>b\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><pre style='white-space:pre-wrap;word-break:break-all;'>b</pre>\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
     QCOMPARE(qmls[1], expe1);
 
     s = "```\na\n```\nb";
     qmls = doc_parser->parseQML(s, 600);
     Q_ASSERT(qmls.size() == 2);
-    expe0 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    expe0 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><pre style='white-space:pre-wrap;word-break:break-all;'>a</pre>\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
     QCOMPARE(qmls[0], expe0);
     expe1 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>b\";width:parent?parent.width:0}";
     QCOMPARE(qmls[1], expe1);
@@ -364,7 +365,7 @@ void xxmoonTest::testParser1() {
     s = "```\na\n```\n\n# b";
     qmls = doc_parser->parseQML(s, 600);
     Q_ASSERT(qmls.size() == 2);
-    expe0 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    expe0 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><pre style='white-space:pre-wrap;word-break:break-all;'>a</pre>\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
     QCOMPARE(qmls[0], expe0);
     expe1 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><p style='line-height:20px'>&nbsp;</p><h1>b</h1>\";width:parent?parent.width:0}";
     QCOMPARE(qmls[1], expe1);
@@ -374,7 +375,7 @@ void xxmoonTest::testParser1() {
     Q_ASSERT(qmls.size() == 2);
     expe0 = "Img{src:\"file:///D://xxmoon/xxmoon/imgs/2023/20231010090004.712.430.196.png\";width:Math.min(parent?parent.width:0,430);height:196;scale:1}";
     QCOMPARE(qmls[0], expe0);
-    expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><pre style='white-space:pre-wrap;word-break:break-all;'>a</pre>\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
     QCOMPARE(qmls[1], expe1);
 
     s = "file://1.mp4";
@@ -386,15 +387,15 @@ void xxmoonTest::testParser1() {
     s = "```\na\n```\n```\nb\n```";
     qmls = doc_parser->parseQML(s, 600);
     Q_ASSERT(qmls.size() == 2);
-    expe0 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
-    expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>b\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    expe0 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><pre style='white-space:pre-wrap;word-break:break-all;'>a</pre>\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><pre style='white-space:pre-wrap;word-break:break-all;'>b</pre>\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
     QCOMPARE(qmls[0], expe0);
     QCOMPARE(qmls[1], expe1);
 
     s = "```\na\n```\n\n# b\n\n# c\n\nd\n\ne";
     qmls = doc_parser->parseQML(s, 600);
     Q_ASSERT(qmls.size() == 2);
-    expe0 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    expe0 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><pre style='white-space:pre-wrap;word-break:break-all;'>a</pre>\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
     expe1 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><p style='line-height:20px'>&nbsp;</p><h1>b</h1><p style='line-height:20px'>&nbsp;</p><h1>c</h1><p style='line-height:20px'>&nbsp;</p>d<br><br>e\";width:parent?parent.width:0}";
     QCOMPARE(qmls[0], expe0);
     QCOMPARE(qmls[1], expe1);
@@ -451,9 +452,9 @@ void xxmoonTest::testParser1() {
     s = "```\na\n```\n\n```\nb\n```";
     qmls = doc_parser->parseQML(s, 600);
     QCOMPARE(qmls.size(), 3);
-    expe0 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    expe0 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><pre style='white-space:pre-wrap;word-break:break-all;'>a</pre>\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
     expe1 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><p style='line-height:20px'>&nbsp;</p>\";width:parent?parent.width:0}";
-    expe2 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>b\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    expe2 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><pre style='white-space:pre-wrap;word-break:break-all;'>b</pre>\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
     QCOMPARE(qmls[0], expe0);
     QCOMPARE(qmls[1], expe1);
     QCOMPARE(qmls[2], expe2);
@@ -490,7 +491,7 @@ void xxmoonTest::testParser2() {
     // 验证图片组件 - 包含图片路径和尺寸信息
     QString expe0 = "Img{src:\"file:///D://xxmoon/xxmoon/imgs/2024/20240604105236.694.488.353.png\";width:Math.min(parent?parent.width:0,488);height:353;scale:1}";
     QString expe1 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><p style='line-height:20px'>&nbsp;</p><h1>a</h1>b<hr>\";width:parent?parent.width:0}";
-    QString expe2 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>c\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    QString expe2 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><pre style='white-space:pre-wrap;word-break:break-all;'>c</pre>\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
     QCOMPARE(qmls[0], expe0);
     QCOMPARE(qmls[1], expe1);
     QCOMPARE(qmls[2], expe2);
@@ -512,7 +513,7 @@ void xxmoonTest::testParser4() {
     Q_ASSERT(qmls.size() == 2);
 
     QString expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><h1>a</h1><p style='line-height:20px'>&nbsp;</p>\";width:parent?parent.width:0}";
-    QString expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>b\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    QString expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><pre style='white-space:pre-wrap;word-break:break-all;'>b</pre>\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
     QCOMPARE(qmls[0], expe0);
     QCOMPARE(qmls[1], expe1);
 }
@@ -522,7 +523,7 @@ void xxmoonTest::testParser5() {
     QStringList qmls = doc_parser->parseQML(s, 600);
     Q_ASSERT(qmls.size() == 2);
 
-    QString expe0 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    QString expe0 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><pre style='white-space:pre-wrap;word-break:break-all;'>a</pre>\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
     QString expe1 = "Img{src:\"file:///D://xxmoon/xxmoon/imgs/2024/20240604105236.694.488.353.png\";width:Math.min(parent?parent.width:0,488);height:353;scale:1}";
     QCOMPARE(qmls[0], expe0);
     QCOMPARE(qmls[1], expe1);
@@ -542,7 +543,7 @@ void xxmoonTest::testParser7() {
     Q_ASSERT(qmls.size() == 2);
 
     QString expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>a\";width:parent?parent.width:0}";
-    QString expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>b\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    QString expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><pre style='white-space:pre-wrap;word-break:break-all;'>b</pre>\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
     QCOMPARE(qmls[0], expe0);
     QCOMPARE(qmls[1], expe1);
 }
@@ -604,7 +605,7 @@ void xxmoonTest::testParser11() {
     QStringList qmls = doc_parser->parseQML(s, 600);
     Q_ASSERT(qmls.size() == 2);
     QString expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><h1>a</h1>b\";width:parent?parent.width:0}";
-    QString expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style>c\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
+    QString expe1 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><pre style='white-space:pre-wrap;word-break:break-all;'>c</pre>\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
     QCOMPARE(qmls[0], expe0);
     QCOMPARE(qmls[1], expe1);
 }
@@ -613,6 +614,13 @@ void xxmoonTest::testParser12() {
     QStringList qmls = doc_parser->parseQML(s, 600);
     Q_ASSERT(qmls.size() == 1);
     QString expe0 = "Txt{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><h1>a</h1><h2>b</h2><h3>c</h3>\";width:parent?parent.width:0}";
+    QCOMPARE(qmls[0], expe0);
+}
+void xxmoonTest::testParser13() {
+    QString s = "```\n````\n````\n```";
+    QStringList qmls = doc_parser->parseQML(s, 600);
+    Q_ASSERT(qmls.size() == 1);
+    QString expe0 = "Quote{text:\"<style>*{margin:0;padding:0;}h1,h2,h3{color:black;}b{color:#303030;}</style><pre style='white-space:pre-wrap;word-break:break-all;'>````\n````</pre>\";width:parent?parent.width:0;color:'#303030';textColor:'#FFFFFF';}";
     QCOMPARE(qmls[0], expe0);
 }
 void xxmoonTest::test18() {
